@@ -635,7 +635,7 @@ progress {
 .container-sm {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
-  width: 100%;
+  width: 70%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
@@ -726,7 +726,7 @@ progress {
 
 .col-auto {
   flex: 0 0 auto;
-  width: auto;
+  width: 50px;
 }
 
 .col-1 {
@@ -3760,7 +3760,8 @@ textarea.form-control-lg {
 .navbar > .container-md,
 .navbar > .container-lg,
 .navbar > .container-xl,
-.navbar > .container-xxl {
+.navbar > .container-xxl,
+.navbar > .container2{
   display: flex;
   flex-wrap: inherit;
   align-items: center;
