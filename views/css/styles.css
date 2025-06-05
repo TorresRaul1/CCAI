@@ -11347,3 +11347,8 @@ section#contact form#contactForm :-ms-input-placeholder {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-light-rgb), var(--bs-border-opacity)) !important;
 }
+.justificado {
+  text-align: justify;
+  line-height: 1.4;        /* Espaciado entre líneas */
+  text-justify: inter-word;
+}
