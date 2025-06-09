@@ -34,7 +34,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #ffc800;
+  --bs-primary: #009999;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -635,7 +635,7 @@ progress {
 .container-sm {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
-  width: 70%;
+  width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
