@@ -2982,19 +2982,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  --bs-btn-color: #ffc800;
-  --bs-btn-border-color: #ffc800;
+  --bs-btn-color: #009999;
+  --bs-btn-border-color: #009999;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #ffc800;
-  --bs-btn-hover-border-color: #ffc800;
+  --bs-btn-hover-bg: #009999;
+  --bs-btn-hover-border-color: #009999;
   --bs-btn-focus-shadow-rgb: 255, 200, 0;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #ffc800;
-  --bs-btn-active-border-color: #ffc800;
+  --bs-btn-active-bg: #009999;
+  --bs-btn-active-border-color: #009999;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #ffc800;
+  --bs-btn-disabled-color: #009999;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #ffc800;
+  --bs-btn-disabled-border-color: #009999;
   --bs-gradient: none;
 }
 
@@ -3016,7 +3016,7 @@ textarea.form-control-lg {
 }
 
 .btn-outline-success {
-  --bs-btn-color: #198754;
+  --bs-btn-color: hsl(152, 69%, 31%);
   --bs-btn-border-color: #198754;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #198754;
@@ -10915,9 +10915,9 @@ p {
   -webkit-text-stroke: 0.7px #fff;
   letter-spacing: 0.0625em;
 }
-
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ffc800;
+  color: #009999;
+  -webkit-text-stroke: 1.3px #009999;
 }
 
 @media (min-width: 992px) {
@@ -11354,3 +11354,47 @@ section#contact form#contactForm :-ms-input-placeholder {
   line-height: 1.4;        /* Espaciado entre líneas */
   text-justify: inter-word;
 }
+/*Estilo para el submenú*/
+.dropdown-menu {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  min-width: 220px;
+}
+
+.dropdown-item {
+  padding: 12px 20px;
+  color: #212529;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+/* Fondo oscuro para el submenú */
+.navbar-dark .dropdown-menu {
+  background-color: #212529;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  min-width: 220px;
+}
+/* Fondo oscuro para el submenú */
+.navbar-dark .dropdown-menu {
+  background-color: #212529;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  min-width: 220px;
+}
+
+/* Efecto hover: fondo gris oscuro, texto blanco */
+.navbar-dark .dropdown-item:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+
+
