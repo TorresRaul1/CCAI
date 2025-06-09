@@ -3761,8 +3761,7 @@ textarea.form-control-lg {
 .navbar > .container-md,
 .navbar > .container-lg,
 .navbar > .container-xl,
-.navbar > .container-xxl,
-.navbar > .container2{
+.navbar > .container-xxl{
   display: flex;
   flex-wrap: inherit;
   align-items: center;
