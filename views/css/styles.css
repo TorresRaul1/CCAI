@@ -726,8 +726,9 @@ progress {
 
 .col-auto {
   flex: 0 0 auto;
-  width: 50px;
+  width: auto;
 }
+
 
 .col-1 {
   flex: 0 0 auto;
