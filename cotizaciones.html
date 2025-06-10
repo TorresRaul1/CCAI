@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CCAI</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="Views/css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+                    <div class="container-fluid">
+                        <div class="row w-100 align-items-center">
+                        
+                        <!-- Logo -->
+                        <div class="col-auto px-5">
+                            <a class="navbar-brand" href="index.html">
+                            <img src="Views/img/logo.png" alt="Logo" />
+                            </a>
+                        </div>
+
+                        <!-- Menú principal -->
+                        <div class="col">
+                            <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav text-uppercase py-4 py-lg-0">
+                                <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                                <li class="nav-item"><a class="nav-link" href="consultores.html">Consultores</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#Soluciones">Soluciones</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#Financiamiento">Financiamiento</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#Integrate al CCAI">Integrate al CCAI</a></li>
+                            </ul>
+                            </div>
+                        </div>
+                        <!-- Segundo grupo de enlaces a la derecha -->
+                        <div class="col-auto">
+                            <ul class="navbar-nav text-uppercase py-4 py-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="cotizaciones.html">Cotizaciones</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Acercate al CCAI">Acercate al CCAI</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                </nav>
+
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Bienvenidos al Centro de Cooperacion Academia-Industria</div>
+                <div class="masthead-heading text-uppercase">Tecnologico de estudios superiores Chimalhuacan</div>
+            </div>
+        </header>
+
+        <!-- Cotizaciones -->
+            <!-- Cotizaciones -->
+                <section class="page-section bg-light" id="Cotizaciones">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="section-heading text-uppercase">Solicita una Cotización</h2>
+                            <h3 class="section-subheading text-muted">Transforma tu idea en una solución concreta con el apoyo del CCAI.</h3>
+                        </div>
+
+                        <!-- Descripción -->
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-lg-10 text-center">
+                                <p class="lead text-muted">
+                                    En el <strong>Centro de Cooperación Academia-Industria</strong> trabajamos de la mano contigo para ofrecer soluciones personalizadas en diseño, automatización, simulación y desarrollo tecnológico. Completa el siguiente formulario y uno de nuestros consultores especializados te contactará con una propuesta adaptada a tus necesidades.
+                                </p>
+                                <p class="text-muted">Nos comprometemos a responder en un plazo no mayor a 72 horas hábiles.</p>
+                            </div>
+                        </div>
+
+                        <!-- Formulario -->
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <form id="cotizacionForm" action="#" method="post" class="needs-validation" novalidate>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="nombre" class="form-label">Nombre completo</label>
+                                            <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Juan Pérez">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="correo" class="form-label">Correo electrónico</label>
+                                            <input type="email" class="form-control" id="correo" name="correo" required placeholder="correo@ejemplo.com">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="empresa" class="form-label">Empresa / Institución</label>
+                                        <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Nombre de la empresa">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="servicio" class="form-label">Tipo de area requerido</label>
+                                        <select class="form-select" id="servicio" name="servicio" required>
+                                            <option value="" selected disabled>Selecciona una opción</option>
+                                            <option value="diseno">Claude Shannon (Centro de desarrollo)</option>
+                                            <option value="automatizacion">Aldea da vinci</option>
+                                            <option value="simulacion">Casa de los pochtecas</option>
+                                            <option value="asesoria">Cocina Mexa</option>
+                                            <option value="otro">Laboratorio Kyoto</option>
+                                            <option value="otro">Otro</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label for="descripcion" class="form-label">Descripción del proyecto o requerimiento</label>
+                                        <textarea class="form-control" id="descripcion" name="descripcion" rows="5" required placeholder="Describe los objetivos de tu proyecto, características técnicas o necesidades específicas..."></textarea>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary btn-xl text-uppercase">Enviar solicitud</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto table-group-divider">
+            <div class="container px-4">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto">
+                        <div class="small m-0"> 
+                            <a>&copy; Centro de Cooperación Academia Industria (CCAI) Teschi </a>
+                            <span class="mx-1">&middot;</span>
+                            <a>Todos los derechos reservados 2025</a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <a class="small text-primario-600" href="#!">Términos y Condiciones</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small text-primario-600" href="#!">Política de Privacidad</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="Views/js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
