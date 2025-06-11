@@ -635,7 +635,7 @@ progress {
 .container-sm {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
-  width: 100%;
+  width: 90%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
@@ -686,7 +686,7 @@ progress {
 }
 
 .col {
-  flex: 1 0 0%;
+  flex: 100%;
 }
 
 .row-cols-auto > * {
@@ -11365,7 +11365,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .dropdown-item {
   padding: 12px 20px;
-  color: #212529;
+  color: #fff;
   font-weight: 400;
   font-size: 15px;
 }
@@ -11381,20 +11381,19 @@ section#contact form#contactForm :-ms-input-placeholder {
   border-radius: 0;
   padding: 0;
   min-width: 220px;
-}
-/* Fondo oscuro para el submenú */
-.navbar-dark .dropdown-menu {
-  background-color: #212529;
-  border: none;
-  border-radius: 0;
-  padding: 0;
-  min-width: 220px;
-}
+}t        
 
 /* Efecto hover: fondo gris oscuro, texto blanco */
 .navbar-dark .dropdown-item:hover {
   background-color: #343a40;
-  color: #fff;
+  color: #009999;
 }
-
+/* Texto claro, misma fuente del navbar */
+.navbar-dark .dropdown-item {
+  color: #fff;
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 400;
+}
 

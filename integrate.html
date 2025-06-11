@@ -14,54 +14,51 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="Views/css/styles.css" rel="stylesheet"/>
+        <link href="views/css/styles.css" rel="stylesheet"/>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container-fluid">
-                <div class="row w-100 align-items-center">
                 <!-- Logo -->
-                <div class="col-auto px-5">
-                    <a class="navbar-brand" href="index.html"><img src="Views/img/logo.png" alt="Logo" /></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
+                <a class="navbar-brand" href="index.html"><img src="Views/img/logo.png" alt="Logo" /></a>
+
+                <!-- Botón hamburguesa (móvil) -->
+                <button class=" navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">MENU <i class="fas fa-bars ms-1"></i>
                 </button>
-                </div>
-                
-                <!-- Menú principal -->
-                <div class="col">
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav text-uppercase py-4 py-lg-0">
-                        <!-- Submenú Servicios -->
+
+                <!-- Menú completo -->
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0 d-lg-flex align-items-lg-center flex-column flex-lg-row text-center w-100 justify-content-between">
+                        <!-- Bloque izquierdo -->
+                        <div class="d-lg-flex flex-column flex-lg-row">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarServicios" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Servicios</a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarServicios">
-                                    <li class="nav-item"><a class="nav-link dropdown-item" href="servicios.html">Centro de desarrollo</a></li>
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarServicios" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarServicios">
+                                    <li><a class="nav-link dropdown-item" href="servicios.html">Centro de desarrollo</a></li>
                                     <li><a class="nav-link dropdown-item" href="serv_aldea.html">Aldea Da Vinci</a></li>
                                     <li><a class="nav-link dropdown-item" href="serv_casa.html">Casa de los Pochtecas</a></li>
                                     <li><a class="nav-link dropdown-item" href="serv_cocina.html">Cocina Mexa</a></li>
                                     <li><a class="nav-link dropdown-item" href="serv_lab.html">Laboratorio Kioto</a></li>
-                                </ul>
-                            </li> 
+                                    </ul>
+                            </li>
                             <li class="nav-item"><a class="nav-link" href="consultores.html">Consultores</a></li>
                             <li class="nav-item"><a class="nav-link" href="soluciones.html">Soluciones</a></li>
                             <li class="nav-item"><a class="nav-link" href="financiamiento.html">Financiamiento</a></li>
                             <li class="nav-item"><a class="nav-link" href="integrate.html">Integrate al CCAI</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Segundo grupo de enlaces a la derecha -->
-                <div class="col-auto">
-                    <ul class="navbar-nav text-uppercase py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="cotizaciones.html">Cotizaciones</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link" href="acercate.html">Acercate al CCAI</a></li>                        
+                        </div>
+                        <!-- Bloque derecho -->
+                        <div class="d-lg-flex flex-column flex-lg-row">
+                            <li class="nav-item"><a class="nav-link" href="cotizaciones.html">Cotizaciones</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link" href="acercate.html">Acercate al CCAI</a></li>
+                        </div>
                     </ul>
                 </div>
-            </div> 
+            </div>
         </nav>
+        
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
