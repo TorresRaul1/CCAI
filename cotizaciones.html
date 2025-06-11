@@ -19,39 +19,45 @@
     <body id="page-top">
         <!-- Navigation-->
                 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-                    <div class="container-fluid">
-                        <div class="row w-100 align-items-center">
-                        
-                        <!-- Logo -->
-                        <div class="col-auto px-5">
-                            <a class="navbar-brand" href="index.html">
-                            <img src="Views/img/logo.png" alt="Logo" />
-                            </a>
-                        </div>
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html"><img src="Views/img/logo.png" alt="Logo" /></a>
 
-                        <!-- Menú principal -->
-                        <div class="col">
-                            <div class="collapse navbar-collapse" id="navbarResponsive">
-                            <ul class="navbar-nav text-uppercase py-4 py-lg-0">
-                                <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                                <li class="nav-item"><a class="nav-link" href="consultores.html">Consultores</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#Soluciones">Soluciones</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#Financiamiento">Financiamiento</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#Integrate al CCAI">Integrate al CCAI</a></li>
-                            </ul>
-                            </div>
+                <!-- Botón hamburguesa (móvil) -->
+                <button class=" navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">MENU <i class="fas fa-bars ms-1"></i>
+                </button>
+
+                <!-- Menú completo -->
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0 d-lg-flex align-items-lg-center flex-column flex-lg-row text-center w-100 justify-content-between">
+                        <!-- Bloque izquierdo -->
+                        <div class="d-lg-flex flex-column flex-lg-row">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarServicios" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarServicios">
+                                    <li><a class="nav-link dropdown-item" href="servicios.html">Centro de desarrollo</a></li>
+                                    <li><a class="nav-link dropdown-item" href="serv_aldea.html">Aldea Da Vinci</a></li>
+                                    <li><a class="nav-link dropdown-item" href="serv_casa.html">Casa de los Pochtecas</a></li>
+                                    <li><a class="nav-link dropdown-item" href="serv_cocina.html">Cocina Mexa</a></li>
+                                    <li><a class="nav-link dropdown-item" href="serv_lab.html">Laboratorio Kioto</a></li>
+                                    </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="consultores.html">Consultores</a></li>
+                            <li class="nav-item"><a class="nav-link" href="soluciones.html">Soluciones</a></li>
+                            <li class="nav-item"><a class="nav-link" href="financiamiento.html">Financiamiento</a></li>
+                            <li class="nav-item"><a class="nav-link" href="integrate.html">Integrate al CCAI</a></li>
                         </div>
-                        <!-- Segundo grupo de enlaces a la derecha -->
-                        <div class="col-auto">
-                            <ul class="navbar-nav text-uppercase py-4 py-lg-0">
+                        <!-- Bloque derecho -->
+                        <div class="d-lg-flex flex-column flex-lg-row">
                             <li class="nav-item"><a class="nav-link" href="cotizaciones.html">Cotizaciones</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#Acercate al CCAI">Acercate al CCAI</a></li>
-                            </ul>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca del CCAI</a></li>
                         </div>
-                    </div> 
-                </nav>
-
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
