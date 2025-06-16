@@ -44,7 +44,7 @@
   --bs-dark: #212529;
   --bs-primary-rgb: 255, 200, 0;
   --bs-secondary-rgb: 108, 117, 125;
-  --bs-success-rgb: 25, 135, 84;
+  --bs-success-rgb: 0,153,153;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 200, 0;
   --bs-danger-rgb: 220, 53, 69;
@@ -11382,8 +11382,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   border-radius: 0;
   padding: 0;
   min-width: 220px;
-}t        
-
+}
 /* Efecto hover: fondo gris oscuro, texto blanco */
 .navbar-dark .dropdown-item:hover {
   background-color: #343a40;
@@ -11397,4 +11396,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 15px;
   font-weight: 400;
 }
-
+.input-sin-borde {
+  border: none !important;
+  box-shadow: none !important;
+}

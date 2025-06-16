@@ -15,6 +15,10 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="views/css/styles.css" rel="stylesheet"/>
+        <!-- Bootstrap Icons CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Bootstrap Bundle con Popper.js (necesario para los toasts) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -67,43 +71,152 @@
                 <div class="masthead-subheading">Contáctanos y da el primer paso</div>
             </div>
         </header>
-            <!-- Page content-->
-            <section class="py-5">
-                <div class="container shadow rounded-4" style="background-color: rgb(251, 251, 251); border: 10px ; box-shadow: 10px ;">
-                    <div class="container px-1">
-                        <div class="row">
-                            <div class="text-center mb-5 centered-text3">
-                                <h1 class="display-5 fw-bolder mb-0" ><span class="text-gradient d-inline text-shadow animated-message">Contacto</span></h1>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 mb-4">
-                                <div class="rounded-4 overflow-hidden shadow">
-                                    <div class="elementor-widget-container mapa-container ">
-                                        <div class="elementor-custom-embed">
-                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2237.497511747282!2d-98.93024027046422!3d19.41209842269611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e3d9415ca463%3A0x685a49981c9630ae!2sAv.%20Primavera%20s%2Fn%2C%20Sta%20Maria%20Nativitas%2C%2056335%20Chimalhuac%C3%A1n%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1743178697906!5m2!1ses-419!2smx" 
-                                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                                            </iframe>
+        <section class="py-5">
+            <div class="container px-5 mb-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="text-center mb-4">
+                                    <h1 class="fw-bolder mb-0">
+                                        <span class="text-gradient d-inline">Contáctanos</span>
+                                    </h1>
+                                </div>
+                                <p class="text-muted text-center">¿En qué podemos ayudarte? Mándanos un mensaje y uno de nuestros especialistas se comunicará contigo pronto.<br>Por favor, completa el siguiente formulario:</p>
+                                <form>
+                                    <div class="row g-3 mb-3">
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                                                <i class="bi bi-person-circle me-2"></i>
+                                                <input type="text" class="form-control bg-light border-0" placeholder="Nombre completo" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                                                <i class="bi bi-person-fill me-2"></i>
+                                                <input type="text" class="form-control bg-light border-0" placeholder="Puesto" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                                                <i class="bi bi-envelope-fill me-2"></i>
+                                                <input type="email" class="form-control bg-light border-0" placeholder="Email" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                                                <i class="bi bi-telephone-fill me-2"></i>
+                                                <input type="tel" class="form-control bg-light border-0" placeholder="Teléfono" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                                                <i class="bi bi-building me-2"></i>
+                                                <input type="text" class="form-control bg-light border-0" placeholder="Empresa u organización" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                                                <i class="bi bi-kanban-fill me-2"></i>
+                                                <select class="form-select bg-light border-0" required>
+                                                    <option selected disabled>Tipo de servicio que le interesa</option>
+                                                    <option>Desarrollo Móvil</option>
+                                                    <option>Desarrollo Web</option>
+                                                    <option>Tienda en Línea</option>
+                                                    <option>Otro</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="d-flex align-items-start bg-light rounded-4 p-2">
+                                                <i class="bi bi-chat-text me-2 mt-2"></i>
+                                                <textarea class="form-control bg-light border-0" rows="3" placeholder="Descripción" required></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-4">
+                                        <a id="sendButton" class="btn btn-outline-primary btn-lg px-5 py-3 fw-bolder" href="#">Enviar</a>
+                                    </div>
+                                </form>
+                                <!-- Toast -->
+                                <div class="toast-container position-fixed top-50 start-50 translate-middle p-3">
+                                    <div id="messageToast" class="toast text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                                        <div class="toast-header bg-success text-white">
+                                            <strong class="me-auto">Mensaje</strong>
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+                                        </div>
+                                        <div class="toast-body text-center">
+                                            <p class="mb-1">Hemos recibido tu solicitud, pronto nos pondremos en contacto contigo.</p>
+                                            <p class="mb-0">¡Gracias por tu interés en nuestros servicios! 😊</p>
                                         </div>
                                     </div>
                                 </div>
+                            </div> <!-- card-body -->
+                        </div> <!-- card -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Page content-->
+        <section class="py-1"> <!-- Aumenté el padding vertical -->
+            <div class="container shadow rounded-4 bg-white mb-5"> <!-- mb-5 da espacio con el footer -->
+                <div class="px-4 py-5"> <!-- Espaciado interior -->
+                    <div class="text-center mb-4">
+                        <h2 class="display-5 fw-bolder mb-0">
+                            <span class="text-gradient d-inline text-shadow animated-message">Visítanos</span>
+                        </h2>
+                    </div>
+
+                    <div class="row">
+                        <!-- Mapa -->
+                        <div class="col-12 mb-4">
+                            <div class="rounded-4 overflow-hidden shadow">
+                                <div class="elementor-widget-container mapa-container">
+                                    <div class="elementor-custom-embed">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2237.497511747282!2d-98.93024027046422!3d19.41209842269611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e3d9415ca463%3A0x685a49981c9630ae!2sAv.%20Primavera%20s%2Fn%2C%20Sta%20Maria%20Nativitas%2C%2056335%20Chimalhuac%C3%A1n%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1743178697906!5m2!1ses-419!2smx" 
+                                            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                        </iframe>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-12 text-center ">
-                                <p class="fw-bolder2 text-shadow centered-text2"><i class="bi bi-geo-alt-fill text-success"></i> DIRECCIÓN:</p>
-                                <p class="animated-message3">C. Primavera S/N, Santa María Nativitas, 56330 Chimalhuacán, México</p>
-                                <p class="fw-bolder2 text-shadow centered-text2"><i class="bi bi-envelope-fill text-success"></i> CORREO ELECTRÓNICO:</p>
-                                <p class="animated-message3"><a href="mailto:demo@example.com">demo@example.com</a> </p>
-                                <p class="fw-bolder2 text-shadow centered-text2"><i class="bi bi-telephone-fill text-success"></i> TELÉFONO:</p>
-                                <p class="animated-message3">(+012 345 6789) | (+012 345 6789)</p>
-                            </div>
+                        </div>
+
+                        <!-- Datos de contacto -->
+                        <div class="col-12 text-center">
+                            <p class="fw-bold text-shadow"><i class="bi bi-geo-alt-fill text-success"></i> DIRECCIÓN:</p>
+                            <p class="text-muted">Tecnológico de Estudios Superiores de Chimalhuacán, Edificio del CCAI en Calle Primavera S/N Santa María Nativitas, 56330 Chimalhuacán, México</p>
+                            
+                            <p class="fw-bold text-shadow"><i class="bi bi-envelope-fill text-success"></i> CORREO ELECTRÓNICO:</p>
+                            <p class="text-muted">direccionccai@teschi.edu.mx</p>
+                            
+                            <p class="fw-bold text-shadow"><i class="bi bi-telephone-fill text-success"></i> TELÉFONO:</p>
+                            <p class="text-muted">(+012 345 6789) | (+012 345 6789)</p>
                         </div>
                     </div>
                 </div>
             </div>
-            </section>
-        </main>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-white py-4 mt-auto border-top" style="border-top: 3px solid #009999;">
+            <div class="container px-4">
+                <div class="row text-center text-sm-start align-items-center">
+                    <!-- Información de derechos -->
+                    <div class="col-12 col-sm-6 mb-2 mb-sm-0">
+                        <div class="small text-muted">
+                            © Centro de Cooperación Academia Industria (CCAI) Teschi <br>
+                            Todos los derechos reservados 2025
+                        </div>
+                    </div>
+
+                    <!-- Enlaces -->
+                    <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end gap-3">
+                        <a class="small text-decoration-underline text-primary fw-semibold" href="#!">Términos y Condiciones</a>
+                        <span class="text-muted">&middot;</span>
+                        <a class="small text-decoration-underline text-primary fw-semibold" href="#!">Política de Privacidad</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <!-- Core theme JS-->
         <script src="views/js/scripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
@@ -111,5 +224,13 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+            document.getElementById("sendButton").addEventListener("click", function (event) {
+                event.preventDefault(); // Evita el salto del <a href="#">
+                var toastEl = document.getElementById("messageToast");
+                var toast = new bootstrap.Toast(toastEl);
+                toast.show();
+            });
+        </script>
     </body>
 </html> 
