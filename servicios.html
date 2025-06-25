@@ -27,7 +27,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container-fluid">
                 <!-- Logo -->
-                <a class="navbar-brand" href="index.html"><img src="Views/img/logo.png" alt="Logo" /></a>
+                <a class="navbar-brand" href="index.html"><img src="views/img/logo.png" alt="Logo" /></a>
 
                 <!-- Botón hamburguesa (móvil) -->
                 <button class=" navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
@@ -42,11 +42,11 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarServicios" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarServicios">
-                                    <li><a class="nav-link dropdown-item" href="servicios.html">Centro de desarrollo</a></li>
-                                    <li><a class="nav-link dropdown-item" href="serv_aldea.html">Aldea Da Vinci</a></li>
-                                    <li><a class="nav-link dropdown-item" href="serv_casa.html">Casa de los Pochtecas</a></li>
-                                    <li><a class="nav-link dropdown-item" href="serv_cocina.html">Cocina Mexa</a></li>
-                                    <li><a class="nav-link dropdown-item" href="serv_lab.html">Laboratorio Kioto</a></li>
+                                    <li><a class="nav-link dropdown-item text-center" href="servicios.html">Centro de desarrollo</a></li>
+                                    <li><a class="nav-link dropdown-item text-center" href="serv_aldea.html">Aldea Da Vinci</a></li>
+                                    <li><a class="nav-link dropdown-item text-center" href="serv_casa.html">Casa de los Pochtecas</a></li>
+                                    <li><a class="nav-link dropdown-item text-center" href="serv_cocina.html">Cocina Mexa</a></li>
+                                    <li><a class="nav-link dropdown-item text-center" href="serv_lab.html">Laboratorio Kioto</a></li>
                                     </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="consultores.html">Consultores</a></li>
@@ -72,7 +72,7 @@
             </div>
         </header>
         <!-- Projects Section-->
-        <section class="py-5 page-section bg-light">
+        <section class="py-1 page-section bg-light">
             <div class="container px-5 mb-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-12 col-xl-11 col-xxl-10">
@@ -269,7 +269,7 @@
                                 <img class="img-fluid" src="Views/img/Ult_des/st4.png" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">i Stock</div>
+                                <div class="portfolio-caption-heading">iStock</div>
                                 <div class="portfolio-caption-subheading text-muted">Gestión de inventarios </div>
                             </div>
                         </div>
@@ -307,230 +307,153 @@
                 </div>
             </div>
         </section>
-        
         <!-- Portfolio Modals-->
         <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="Views/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">CheckSynk</h2>
-                                    <p class="item-intro text-muted">Cheacador de Asistencia</p>
-                                    <img class="img-fluid d-block mx-auto" src="Views/img/Ult_des/Chechador.png " alt="..." />
-                                    <p class="text-muted justificado">App movil que digitaliza y automatiza el registro de asistencia laboral, con funciones de calendario y estadísticas. Su desarrollo se basa en la metodología Scrum y prácticas DevOps para garantizar agilidad y eficiencia.</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+        <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 700px;">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body text-center px-4 pb-4">
+                        <h2 class="text-uppercase text-gradient fw-bold mb-2">CheckSynk</h2>
+                        <p class="item-intro text-muted">Checador de Asistencia</p>
+                        <img class="img-fluid d-block mx-auto mb-4" src="Views/img/Ult_des/Chechador.png" alt="CheckSynk" style="max-height: 300px;" />
+                        <p class="text-muted justificado">App móvil que digitaliza y automatiza el registro de asistencia laboral, con funciones de calendario y estadísticas. Su desarrollo se basa en la metodología Scrum y prácticas DevOps para garantizar agilidad y eficiencia.</p>
+                        <ul class="list-inline text-muted mt-3">
+                            <li><strong>Cliente:</strong> Threads</li>
+                            <li><strong>Categoría:</strong> Ilustración</li>
+                        </ul>
+                        <button class="btn btn-outline-primary btn-lg mt-3" data-bs-dismiss="modal">
+                            <i class="fas fa-times me-2"></i> Cerrar proyecto
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="Views/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Agente IA</h2>
-                                    <p class="item-intro text-muted">Automatización de Documentos</p>
-                                    <img class="img-fluid d-block mx-auto" src="Views/img/Ult_des/ST2.png" alt="..." />
-                                    <p class="text-muted justificado">Es una automatización de la gestión, almacenamiento y direccionamiento de documentos y archivos en la nube mediante un agente de IA</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Explore
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Graphic Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+        <div class="modal fade" id="portfolioModal2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 700px;">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body text-center px-4 pb-4">
+                        <h2 class="text-uppercase text-gradient fw-bold mb-2">Agente IA</h2>
+                        <p class="item-intro text-muted">Automatización de Documentos</p>
+                        <img class="img-fluid d-block mx-auto mb-4" src="Views/img/Ult_des/ST2.png" alt="agenteia" style="max-height: 300px;" />
+                        <p class="text-muted justificado">Es una automatización de la gestión, almacenamiento y direccionamiento de documentos y archivos en la nube mediante un agente de IA</p>
+                        <ul class="list-inline text-muted mt-3">
+                            <li><strong>Cliente:</strong> Threads</li>
+                            <li><strong>Categoría:</strong> Ilustración</li>
+                        </ul>
+                        <button class="btn btn-outline-primary btn-lg mt-3" data-bs-dismiss="modal">
+                            <i class="fas fa-times me-2"></i> Cerrar proyecto
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 3 modal popup--
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="Views/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    !-- Project details--
-                                    <h2 class="text-uppercase">Agente IA</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="Views/img/portfolio/3.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Finish
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Identity
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="modal fade" id="portfolioModal3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 700px;">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body text-center px-4 pb-4">
+                        <h2 class="text-uppercase text-gradient fw-bold mb-2">Finish</h2>
+                        <p class="item-intro text-muted">Identity</p>
+                        <img class="img-fluid d-block mx-auto mb-4" src="Views/img/Ult_des/ST3.jpg" alt="agenteia" style="max-height: 300px;" />
+                        <p class="text-muted justificado">Es una automatización de la gestión, almacenamiento y direccionamiento de documentos y archivos en la nube mediante un agente de IA</p>
+                        <ul class="list-inline text-muted mt-3">
+                            <li><strong>Cliente:</strong> Threads</li>
+                            <li><strong>Categoría:</strong> Ilustración</li>
+                        </ul>
+                        <button class="btn btn-outline-primary btn-lg mt-3" data-bs-dismiss="modal">
+                            <i class="fas fa-times me-2"></i> Cerrar proyecto
+                        </button>
                     </div>
                 </div>
-            </div>-->
+            </div>
         </div>
         <!-- Portfolio item 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="Views/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">iSTOcK</h2>
-                                    <p class="item-intro text-muted">Gestión de Inventarios     </p>
-                                    <img class="img-fluid d-block mx-auto" src="Views/img/Ult_des/st4.png" alt="..." />
-                                    <p class="text-muted justificado">Aplicación móvil de gestión de inventarios basada en los métodos PEPS (FIFO) y UEPS (LIFO) que brinde a emprendedores, pequeñas y medianas empresas una solución eficiente y accesible para el control de sus productos.</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Lines
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Branding
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+        <div class="modal fade" id="portfolioModal4" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 700px;">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body text-center px-4 pb-4">
+                        <h2 class="text-uppercase text-gradient fw-bold mb-2">iSTOcK</h2>
+                        <p class="item-intro text-muted">Gestión de Inventarios</p>
+                        <img class="img-fluid d-block mx-auto mb-4" src="Views/img/Ult_des/st4.png" alt="iSTOcK" />
+                        <p class="text-muted justificado">Aplicación móvil de gestión de inventarios basada en los métodos PEPS (FIFO) y UEPS (LIFO) que brinda a emprendedores, pequeñas y medianas empresas una solución eficiente y accesible para el control de sus productos.</p>
+                        <ul class="list-inline text-muted mt-3">
+                        <li><strong>Cliente:</strong> Lines</li>
+                        <li><strong>Categoría:</strong> Branding</li>
+                        </ul>
+                        <button class="btn btn-outline-primary btn-lg mt-3" data-bs-dismiss="modal">
+                        <i class="fas fa-times me-2"></i> Cerrar proyecto
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Portfolio item 5 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="Views/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="Views/img/portfolio/5.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Southwest
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Website Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+        <div class="modal fade" id="portfolioModal5" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 700px;">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body text-center px-4 pb-4">
+                        <h2 class="text-uppercase text-gradient fw-bold mb-2">Project Name</h2>
+                        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                        <img class="img-fluid d-block mx-auto mb-4" src="Views/img/portfolio/5.jpg" alt="Project" />
+                        <p class="text-muted justificado">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, mayores repudiandae, nostrum, reiciendis facere nemo!</p>
+                        <ul class="list-inline text-muted mt-3">
+                        <li><strong>Cliente:</strong> Southwest</li>
+                        <li><strong>Categoría:</strong> Website Design</li>
+                        </ul>
+                        <button class="btn btn-outline-primary btn-lg mt-3" data-bs-dismiss="modal">
+                        <i class="fas fa-times me-2"></i> Cerrar proyecto
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Portfolio item 6 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="Views/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="Views/img/portfolio/6.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Window
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Photography
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+        <div class="modal fade" id="portfolioModal6" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 700px;">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body text-center px-4 pb-4">
+                        <h2 class="text-uppercase text-gradient fw-bold mb-2">Project Name</h2>
+                        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                        <img class="img-fluid d-block mx-auto mb-4" src="Views/img/portfolio/6.jpg" alt="Project" />
+                        <p class="text-muted">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, mayores repudiandae, nostrum, reiciendis facere nemo!</p>
+                        <ul class="list-inline text-muted mt-3">
+                        <li><strong>Cliente:</strong> Window</li>
+                        <li><strong>Categoría:</strong> Photography</li>
+                        </ul>
+                        <button class="btn btn-outline-primary btn-lg mt-3" data-bs-dismiss="modal">
+                        <i class="fas fa-times me-2"></i> Cerrar proyecto
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Footer -->
-        <footer class="bg-white py-4 mt-auto border-top" style="border-top: 3px solid #009999;">
-            <div class="container px-4">
+        <footer class="bg-white py-4 mt-auto table-group-divider ">
+            <div class="container-fluid px-0">
                 <div class="row text-center text-sm-start align-items-center">
                     <!-- Información de derechos -->
                     <div class="col-12 col-sm-6 mb-2 mb-sm-0">
-                        <div class="small text-muted">
-                            © Centro de Cooperación Academia Industria (CCAI) Teschi <br>
-                            Todos los derechos reservados 2025
-                        </div>
+                        <div class="small text-muted">© Centro de Cooperación Academia Industria (CCAI) Teschi Todos los derechos reservados 2025</div>
                     </div>
-
                     <!-- Enlaces -->
                     <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end gap-3">
                         <a class="small text-decoration-underline text-primary fw-semibold" href="#!">Términos y Condiciones</a>

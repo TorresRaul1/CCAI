@@ -14,20 +14,22 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="Views/css/styles.css" rel="stylesheet" />
+        <link href="views/css/styles.css" rel="stylesheet"/>
+        <!-- Bootstrap Icons CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Bootstrap Bundle con Popper.js (necesario para los toasts) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
-                <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container-fluid">
                 <!-- Logo -->
                 <a class="navbar-brand" href="index.html"><img src="Views/img/logo.png" alt="Logo" /></a>
-
                 <!-- Botón hamburguesa (móvil) -->
                 <button class=" navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">MENU <i class="fas fa-bars ms-1"></i>
                 </button>
-
                 <!-- Menú completo -->
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0 d-lg-flex align-items-lg-center flex-column flex-lg-row text-center w-100 justify-content-between">
@@ -36,11 +38,11 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarServicios" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarServicios">
-                                    <li><a class="nav-link dropdown-item" href="servicios.html">Centro de desarrollo</a></li>
-                                    <li><a class="nav-link dropdown-item" href="serv_aldea.html">Aldea Da Vinci</a></li>
-                                    <li><a class="nav-link dropdown-item" href="serv_casa.html">Casa de los Pochtecas</a></li>
-                                    <li><a class="nav-link dropdown-item" href="serv_cocina.html">Cocina Mexa</a></li>
-                                    <li><a class="nav-link dropdown-item" href="serv_lab.html">Laboratorio Kioto</a></li>
+                                    <li><a class="nav-link dropdown-item text-center" href="servicios.html">Centro de desarrollo</a></li>
+                                    <li><a class="nav-link dropdown-item text-center" href="serv_aldea.html">Aldea Da Vinci</a></li>
+                                    <li><a class="nav-link dropdown-item text-center" href="serv_casa.html">Casa de los Pochtecas</a></li>
+                                    <li><a class="nav-link dropdown-item text-center" href="serv_cocina.html">Cocina Mexa</a></li>
+                                    <li><a class="nav-link dropdown-item text-center" href="serv_lab.html">Laboratorio Kioto</a></li>
                                     </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="consultores.html">Consultores</a></li>
@@ -67,74 +69,73 @@
         </header>
 <!-- Team-->
         <!-- Cartera de Consultores -->
-<section class="page-section bg-light" id="consultores">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">Cartera de Consultores</h2>
-            <h3 class="section-subheading text-muted">Nuestros principales consultores y equipo en servicio social.</h3>
-        </div>
-        <div class="row">
-            <!-- Consultor Principal 1 -->
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="Views/img/team/1.jpg" alt="Consultor 1" />
-                    <h4>Ing. Oscar Hernandez</h4>
-                    <p class="text-muted">Consultor en Diseño e Innovación</p>
-                    <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Mariana Torres Twitter Profile"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Mariana Torres Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Mariana Torres LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+        <section class="page-section bg-light" id="consultores">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Cartera de Consultores</h2>
+                    <h3 class="section-subheading text-muted">Nuestros principales consultores y equipo en servicio social.</h3>
                 </div>
-            </div>
-
-            <!-- Consultor Principal 2 -->
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="Views/img/team/2.jpg" alt="Consultor 2" />
-                    <h4>Ing. Mariana Torres</h4>
-                    <p class="text-muted">Consultora en Automatización y Control</p>
-                    <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Eduardo Ramírez Twitter Profile"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Eduardo Ramírez Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Eduardo Ramírez LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-
-            <!-- Consultor Principal 3 -->
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="Views/img/team/3.jpg" alt="Consultor 3" />
-                    <h4>Mtro. Eduardo Guzman</h4>
-                    <p class="text-muted">Consultor. en Simulación y Análisis</p>
-                    <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Sofía Medina Twitter Profile"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Sofía Medina Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Sofía Medina LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Grupo de Servicio Social -->
-        <div class="row mt-5 justify-content-center">
-            <div class="col-lg-8">
-                <div class="team-member text-center">
-                    <img class="mx-auto rounded-circle" src="Views/img/team/4.avif" alt="Equipo de Servicio Social" />
-                    <h4>Equipo de Servicio Social</h4>
-                    <p class="text-muted">
-                        Conformado por 20 estudiantes de ingeniería altamente capacitados, este equipo brinda apoyo técnico en áreas como diseño mecánico, simulación FEM/CFD, automatización, QA y robótica, contribuyendo activamente al desarrollo de soluciones innovadoras para los proyectos del CCAI.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-            <footer class="bg-white py-4 mt-auto border-top" style="border-top: 3px solid #009999;">
-            <div class="container px-4">
-                <div class="row text-center text-sm-start align-items-center">
-                    <!-- Información de derechos -->
-                    <div class="col-12 col-sm-6 mb-2 mb-sm-0">
-                        <div class="small text-muted">
-                            © Centro de Cooperación Academia Industria (CCAI) Teschi <br>
-                            Todos los derechos reservados 2025
+                <div class="row">
+                    <!-- Consultor Principal 1 -->
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="Views/img/team/1.jpg" alt="Consultor 1" />
+                            <h4>Ing. Oscar Hernandez</h4>
+                            <p class="text-muted">Consultor en Diseño e Innovación</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Mariana Torres Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Mariana Torres Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Mariana Torres LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
 
+                    <!-- Consultor Principal 2 -->
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="Views/img/team/2.jpg" alt="Consultor 2" />
+                            <h4>Ing. Mariana Torres</h4>
+                            <p class="text-muted">Consultora en Automatización y Control</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Eduardo Ramírez Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Eduardo Ramírez Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Eduardo Ramírez LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Consultor Principal 3 -->
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="Views/img/team/3.jpg" alt="Consultor 3" />
+                            <h4>Mtro. Eduardo Guzman</h4>
+                            <p class="text-muted">Consultor. en Simulación y Análisis</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Sofía Medina Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Sofía Medina Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Sofía Medina LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grupo de Servicio Social -->
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="team-member text-center">
+                            <img class="mx-auto rounded-circle" src="Views/img/team/4.avif" alt="Equipo de Servicio Social" />
+                            <h4>Equipo de Servicio Social</h4>
+                            <p class="text-muted">
+                                Conformado por 20 estudiantes de ingeniería altamente capacitados, este equipo brinda apoyo técnico en áreas como diseño mecánico, simulación FEM/CFD, automatización, QA y robótica, contribuyendo activamente al desarrollo de soluciones innovadoras para los proyectos del CCAI.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+        </section>
+    <!-- Footer -->
+        <footer class="bg-white py-4 mt-auto table-group-divider ">
+            <div class="container-fluid px-0">
+                <div class="row text-center text-sm-start align-items-center">
+                    <!-- Información de derechos -->
+                    <div class="col-12 col-sm-6 mb-2 mb-sm-0">
+                        <div class="small text-muted">© Centro de Cooperación Academia Industria (CCAI) Teschi Todos los derechos reservados 2025</div>
+                    </div>
                     <!-- Enlaces -->
                     <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end gap-3">
                         <a class="small text-decoration-underline text-primary fw-semibold" href="#!">Términos y Condiciones</a>
@@ -144,4 +145,5 @@
                 </div>
             </div>
         </footer>
-</section>
+    </body>
+</html>

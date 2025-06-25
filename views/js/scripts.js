@@ -38,12 +38,46 @@ window.addEventListener('DOMContentLoaded', event => {
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
     );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
+    responsiveNavItem.addEventListener('click', (e) => {
+    // Evitar cerrar menú si es un dropdown-toggle o parte del submenú
+    if (
+        e.target.classList.contains('dropdown-toggle') || 
+        e.target.closest('.dropdown-menu')
+    ) {
+        return;
+    }
+
+    if (window.getComputedStyle(navbarToggler).display !== 'none') {
+        navbarToggler.click();
+    }
+});
+    // Controlar submenús en móviles
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    dropdownToggles.forEach(function (dd) {
+        dd.addEventListener('click', function (e) {
+            if (window.innerWidth < 992) {
+                e.preventDefault();
+                const nextEl = this.nextElementSibling;
+                if (nextEl && nextEl.classList.contains('dropdown-menu')) {
+                    nextEl.classList.toggle('show');
+                }
             }
         });
     });
+    
 
+    const rolSelect = document.getElementById('rolSelect');
+    const extraForm = document.getElementById('extraForm');
+    const submitBtnContainer = document.getElementById('submitBtnContainer');
+
+    rolSelect.addEventListener('change', () => {
+        const value = rolSelect.value;
+        if (value === 'Servicio Social' || value === 'Residencias Profesionales') {
+        extraForm.classList.remove('d-none');
+        submitBtnContainer.classList.remove('d-none');
+        } else {
+        extraForm.classList.add('d-none');
+        submitBtnContainer.classList.add('d-none');
+        }
+    });
 });
