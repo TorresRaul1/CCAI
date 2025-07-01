@@ -77,6 +77,7 @@
   --bs-link-hover-color: #016969;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff4cc;
+  --bs-text-opacity2:#009999;
 }
 
 *,
@@ -11399,4 +11400,9 @@ section#contact form#contactForm :-ms-input-placeholder {
 .input-sin-borde {
   border: none !important;
   box-shadow: none !important;
+}
+
+.text-success2 {
+  --bs-text-opacity2: 1;
+  color: rgba(var(--bs-success-rgb), var(--bs-text-opacity2)) !important;
 }
