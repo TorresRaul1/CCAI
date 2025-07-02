@@ -2023,9 +2023,9 @@ progress {
 .form-control:focus {
   color: #212529;
   background-color: #fff;
-  border-color: #ffe480;
+  border-color: #009999;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(255, 200, 0, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(0, 153, 153, 0.25);
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
@@ -11400,3 +11400,5 @@ section#contact form#contactForm :-ms-input-placeholder {
   border: none !important;
   box-shadow: none !important;
 }
+/*puto gaspar pide como si pagara el culero 
+att los chicos ccai#2025*/

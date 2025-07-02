@@ -90,50 +90,85 @@
                         </div>
 
                         <!-- Formulario -->
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <form id="cotizacionForm" action="#" method="post" class="needs-validation" novalidate>
-                                    <div class="row">
-                                        <div class="col-md-6 mb-3">
-                                            <label for="nombre" class="form-label">Nombre completo</label>
-                                            <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Juan Pérez">
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <label for="correo" class="form-label">Correo electrónico</label>
-                                            <input type="email" class="form-control" id="correo" name="correo" required placeholder="correo@ejemplo.com">
-                                        </div>
-                                    </div>
+                        <section class="py-5">
+                            <div class="container px-5 mb-5">
+                                <div class="row gx-5 justify-content-center">
+                                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                                        <div class="card shadow border-0 rounded-4 mb-5">
+                                            <div class="card-body p-5">
+                                                <div class="text-center mb-4">
+                                                    <h1 class="fw-bolder mb-0">
+                                                        <span class="text-gradient d-inline">Cotiza tu proyecto</span>
+                                                    </h1>
+                                                </div>
+                                                <p class="text-muted text-center mb-4">
+                                                    Por favor completa el siguiente formulario para enviarte una propuesta personalizada.
+                                                </p>
+                                                <form id="cotizacionForm" action="#" method="post" class="needs-validation" novalidate>
+                                                    <div class="row g-3 mb-3">
+                                                        <div class="col-md-6">
+                                                            <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                                                                <i class="bi bi-person-circle me-2"></i>
+                                                                <input type="text" class="form-control bg-light border-0" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                                                                <i class="bi bi-envelope-fill me-2"></i>
+                                                                <input type="email" class="form-control bg-light border-0" id="correo" name="correo" placeholder="Correo electrónico" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                                                                <i class="bi bi-building me-2"></i>
+                                                                <input type="text" class="form-control bg-light border-0" id="empresa" name="empresa" placeholder="Empresa / Institución">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                                                                <i class="bi bi-kanban-fill me-2"></i>
+                                                                <select class="form-select bg-light border-0" id="servicio" name="servicio" required>
+                                                                    <option value="" selected disabled>Tipo de área requerida</option>
+                                                                    <option value="diseno">Claude Shannon (Centro de Desarrollo)</option>
+                                                                    <option value="automatizacion">Aldea Da Vinci</option>
+                                                                    <option value="simulacion">Casa de los Pochtecas</option>
+                                                                    <option value="asesoria">Cocina Mexa</option>
+                                                                    <option value="otro">Laboratorio Kyoto</option>
+                                                                    <option value="otro">Otro</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="d-flex align-items-start bg-light rounded-4 p-2">
+                                                                <i class="bi bi-chat-text me-2 mt-2"></i>
+                                                                <textarea class="form-control bg-light border-0" id="descripcion" name="descripcion" rows="4" placeholder="Descripción del proyecto o requerimiento" required></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-center mt-4">
+                                                        <button type="submit" class="btn btn-outline-primary btn-lg px-5 py-3 fw-bolder">Enviar solicitud</button>
+                                                    </div>
+                                                </form>
 
-                                    <div class="mb-3">
-                                        <label for="empresa" class="form-label">Empresa / Institución</label>
-                                        <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Nombre de la empresa">
+                                                <!-- Toast -->
+                                                <div class="toast-container position-fixed top-50 start-50 translate-middle p-3">
+                                                    <div id="messageToast" class="toast text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                                                        <div class="toast-header bg-success text-white">
+                                                            <strong class="me-auto">Mensaje</strong>
+                                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="toast-body text-center">
+                                                            <p class="mb-1">Hemos recibido tu solicitud, pronto nos pondremos en contacto contigo.</p>
+                                                            <p class="mb-0">¡Gracias por tu interés en nuestros servicios!</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- card-body -->
+                                        </div> <!-- card -->
                                     </div>
-
-                                    <div class="mb-3">
-                                        <label for="servicio" class="form-label">Tipo de area requerido</label>
-                                        <select class="form-select" id="servicio" name="servicio" required>
-                                            <option value="" selected disabled>Selecciona una opción</option>
-                                            <option value="diseno">Claude Shannon (Centro de desarrollo)</option>
-                                            <option value="automatizacion">Aldea da vinci</option>
-                                            <option value="simulacion">Casa de los pochtecas</option>
-                                            <option value="asesoria">Cocina Mexa</option>
-                                            <option value="otro">Laboratorio Kyoto</option>
-                                            <option value="otro">Otro</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="mb-4">
-                                        <label for="descripcion" class="form-label">Descripción del proyecto o requerimiento</label>
-                                        <textarea class="form-control" id="descripcion" name="descripcion" rows="5" required placeholder="Describe los objetivos de tu proyecto, características técnicas o necesidades específicas..."></textarea>
-                                    </div>
-
-                                    <div class="text-center">
-                                        <button type="submit" class="btn btn-primary btn-xl text-uppercase">Enviar solicitud</button>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </section>
                 </section>
 
             <!-- Footer-->
