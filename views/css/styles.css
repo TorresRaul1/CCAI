@@ -10,7 +10,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- :root {
+:root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -77,6 +77,7 @@
   --bs-link-hover-color: #016969;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff4cc;
+  --bs-text-opacity2:#009999;
 }
 
 *,
@@ -2004,7 +2005,7 @@ progress {
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
-     -moz-appearance: none;
+    -moz-appearance: none;
           appearance: none;
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2795,7 +2796,7 @@ textarea.form-control-lg {
   vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
+    -moz-user-select: none;
           user-select: none;
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-radius: var(--bs-btn-border-radius);
@@ -11400,5 +11401,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   border: none !important;
   box-shadow: none !important;
 }
-/*puto gaspar pide como si pagara el culero 
-att los chicos ccai#2025*/
+.text-success2 {
+  --bs-text-opacity2: 1;
+  color: rgba(var(--bs-success-rgb), var(--bs-text-opacity2)) !important;
+}
