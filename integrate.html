@@ -66,134 +66,130 @@
             </div>
         </header>
         <section class="py-5">
-  <div class="container px-5 mb-5">
-    <div class="row gx-5 justify-content-center">
-      <div class="col-lg-11 col-xl-9 col-xxl-8">
-        <div class="card shadow border-0 rounded-4 mb-5">
-          <div class="card-body p-5">
-            <div class="text-center mb-4">
-              <h1 class="fw-bolder mb-0">
-                <span class="d-inline text-shadow text-primario-600">Contáctanos</span>
-              </h1>
+          <div class="container px-5 mb-5">
+            <div class="row gx-5 justify-content-center">
+              <div class="col-lg-11 col-xl-9 col-xxl-8">
+                <div class="card shadow border-0 rounded-4 mb-5">
+                  <div class="card-body p-5">
+                    <div class="text-center mb-4">
+                      <h1 class="fw-bolder mb-0">
+                        <span class="d-inline text-shadow text-primario-600">Contáctanos</span>
+                      </h1>
+                    </div>
+                    <p class="text-muted text-center">Llena el formulario y forma parte de nuestro equipo de profesionales.<br>Aceptamos estudiantes para servicio social y residencias profesionales.</p>
+                    <form id="mainForm">
+                      <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                          <label for="nombres" class="form-label">Nombre/s</label>
+                          <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                            <i class="bi bi-person-circle me-2"></i>
+                            <input type="text" class="form-control bg-light border-0" placeholder="Luis Angel" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="apellidos" class="form-label">Apellidos</label>
+                          <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                            <i class="bi bi-person-fill me-2"></i>
+                            <input type="text" class="form-control bg-light border-0" placeholder="Lopez Perez" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="edad" class="form-label">Edad</label>
+                          <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                            <i class="bi bi-123 me-2"></i>
+                            <input type="number" class="form-control bg-light border-0" placeholder="18" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="telefono" class="form-label">Teléfono</label>
+                          <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            <input type="tel" class="form-control bg-light border-0" placeholder="(+52) 55 55555555" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="email" class="form-label">Correo Electrónico</label>
+                          <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            <input type="email" class="form-control bg-light border-0" placeholder="ejemplo@gmail.com" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="area" class="form-label">Puesto o Área de interés</label>
+                          <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                            <i class="bi bi-person-badge-fill me-2"></i>
+                            <input type="text" class="form-control bg-light border-0" placeholder="Desarrolllador" required>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <label for="telefono" class="form-label">Rol o modalidad</label>
+                          <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                            <i class="bi bi-puzzle-fill me-2"></i>
+                            <select id="rolSelect" class="form-select bg-light border-0" required>
+                              <option selected disabled>Selecciona una opción</option>
+                              <option>Consultor</option>
+                              <option>Servicio Social</option>
+                              <option>Residencias Profesionales</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- Formulario adicional -->
+                        <div id="extraForm" class="col-12 d-none">
+                          <div class="bg-light rounded-4 p-4 mt-3">
+                            <h5>Información para Servicio Social o Residencias Profesionales</h5>
+                            <div class="mb-3">
+                              <label class="form-label">Escuela / Universidad</label>
+                              <input type="text" class="form-control" placeholder="Nombre de la institución">
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label">Carrera</label>
+                              <input type="text" class="form-control" placeholder="Tu carrera o especialidad">
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label">Semestre / Cuatrimestre</label>
+                              <div class="d-flex align-items-center form-control rounded-4 p-2">
+                              <i class="bi bi-puzzle-fill me-2"></i>
+                              <select id="semestreSelect" class="form-select form-control border-0" required>
+                                <option selected disabled>Selecciona una opción</option>
+                                <option>Semestre</option>
+                                <option>Cuatrimestre</option>
+                              </select>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label">Periodo actual</label>
+                              <input type="text" class="form-control" placeholder="Octavo">
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label">Promedio global</label>
+                              <input type="text" class="form-control" placeholder="70">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="submitBtnContainer" class="text-center mt-4 d-none">
+                        <button type="submit" class="btn btn-outline-primary btn-lg px-5 py-3 fw-bolder">Enviar</button>
+                      </div>
+                    </form>
+                    <!-- Toast -->
+                    <div class="toast-container position-fixed top-50 start-50 translate-middle p-3">
+                      <div id="messageToast" class="toast text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header bg-success text-white">
+                          <strong class="me-auto">Mensaje</strong>
+                          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body text-center">
+                          <p class="mb-1">Hemos recibido tu solicitud, pronto nos pondremos en contacto contigo.</p>
+                          <p class="mb-0">¡Gracias por tu interés en nuestros servicios! 😊</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- card-body -->
+                </div> <!-- card -->
+              </div>
             </div>
-            <p class="text-muted text-center">Llena el formulario y forma parte de nuestro equipo de profesionales.<br>Aceptamos estudiantes para servicio social y residencias profesionales.</p>
-
-            <form id="mainForm">
-              <div class="row g-3 mb-3">
-                <div class="col-md-6">
-                  <label for="nombres" class="form-label">Nombre/s</label>
-                  <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                    <i class="bi bi-person-circle me-2"></i>
-                    <input type="text" class="form-control bg-light border-0" placeholder="Luis Angel" required>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <label for="apellidos" class="form-label">Apellidos</label>
-                  <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                    <i class="bi bi-person-fill me-2"></i>
-                    <input type="text" class="form-control bg-light border-0" placeholder="Lopez Perez" required>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <label for="edad" class="form-label">Edad</label>
-                  <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                    <i class="bi bi-123 me-2"></i>
-                    <input type="number" class="form-control bg-light border-0" placeholder="18" required>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <label for="telefono" class="form-label">Teléfono</label>
-                  <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                    <i class="bi bi-telephone-fill me-2"></i>
-                    <input type="tel" class="form-control bg-light border-0" placeholder="(+52) 55 55555555" required>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                    <i class="bi bi-envelope-fill me-2"></i>
-                    <input type="email" class="form-control bg-light border-0" placeholder="Correo electrónico" required>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                    <i class="bi bi-person-badge-fill me-2"></i>
-                    <input type="text" class="form-control bg-light border-0" placeholder="Puesto o Área de interés" required>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                    <i class="bi bi-puzzle-fill me-2"></i>
-                    <select id="rolSelect" class="form-select bg-light border-0" required>
-                      <option selected disabled>Rol o modalidad</option>
-                      <option>Consultor</option>
-                      <option>Servicio Social</option>
-                      <option>Residencias Profesionales</option>
-                    </select>
-                  </div>
-                </div>
-
-                <!-- Formulario adicional -->
-                <div id="extraForm" class="col-12 d-none">
-                  <div class="bg-light rounded-4 p-4 mt-3">
-                    <h5>Formulario adicional (ejemplo)</h5>
-                    <div class="mb-3">
-                      <label class="form-label">Escuela / Universidad</label>
-                      <input type="text" class="form-control" placeholder="Nombre de la institución">
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Carrera</label>
-                      <input type="text" class="form-control" placeholder="Tu carrera o especialidad">
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Periodo de servicio</label>
-                      <input type="text" class="form-control" placeholder="Ej. Enero - Junio 2025">
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div id="submitBtnContainer" class="text-center mt-4 d-none">
-                <button type="submit" class="btn btn-outline-primary btn-lg px-5 py-3 fw-bolder">Enviar</button>
-              </div>
-            </form>
-
-            <!-- Toast -->
-            <div class="toast-container position-fixed top-50 start-50 translate-middle p-3">
-              <div id="messageToast" class="toast text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header bg-success text-white">
-                  <strong class="me-auto">Mensaje</strong>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body text-center">
-                  <p class="mb-1">Hemos recibido tu solicitud, pronto nos pondremos en contacto contigo.</p>
-                  <p class="mb-0">¡Gracias por tu interés en nuestros servicios! 😊</p>
-                </div>
-              </div>
-            </div>
-          </div> <!-- card-body -->
-        </div> <!-- card -->
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-  const rolSelect = document.getElementById('rolSelect');
-  const extraForm = document.getElementById('extraForm');
-  const submitBtnContainer = document.getElementById('submitBtnContainer');
-
-  rolSelect.addEventListener('change', () => {
-    const value = rolSelect.value;
-    if (value === 'Servicio Social' || value === 'Residencias Profesionales') {
-      extraForm.classList.remove('d-none');
-      submitBtnContainer.classList.remove('d-none');
-    } else {
-      extraForm.classList.add('d-none');
-      submitBtnContainer.classList.add('d-none');
-    }
-  });
-</script>
-
+          </div>
+        </section>
         <!-- Footer -->
         <footer class="bg-white py-4 mt-auto table-group-divider ">
             <div class="container-fluid px-0">
@@ -211,6 +207,36 @@
                 </div>
             </div>
         </footer>
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const rolSelect = document.getElementById('rolSelect');
+            const extraForm = document.getElementById('extraForm');
+            const submitBtnContainer = document.getElementById('submitBtnContainer');
+            const mainForm = document.getElementById('mainForm');
+            const messageToast = new bootstrap.Toast(document.getElementById('messageToast'));
+
+            // Mostrar formulario adicional si se selecciona Servicio Social o Residencias
+            rolSelect.addEventListener('change', () => {
+              const value = rolSelect.value;
+              if (value === 'Servicio Social' || value === 'Residencias Profesionales') {
+                extraForm.classList.remove('d-none');
+                submitBtnContainer.classList.remove('d-none');
+              } else {
+                extraForm.classList.add('d-none');
+                submitBtnContainer.classList.remove('d-none'); // Mostrar el botón para Consultor también
+              }
+            });
+
+            // Evento de envío del formulario
+            mainForm.addEventListener('submit', function (e) {
+              e.preventDefault(); // Evita que se recargue la página
+              messageToast.show(); // Muestra el toast
+              mainForm.reset(); // Limpia el formulario
+              extraForm.classList.add('d-none'); // Oculta formulario adicional
+              submitBtnContainer.classList.add('d-none'); // Oculta el botón de enviar
+            });
+          });
+        </script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
