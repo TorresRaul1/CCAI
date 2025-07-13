@@ -8223,19 +8223,19 @@ textarea.form-control-lg {
 
 .user-select-all {
   -webkit-user-select: all !important;
-     -moz-user-select: all !important;
+    -moz-user-select: all !important;
           user-select: all !important;
 }
 
 .user-select-auto {
   -webkit-user-select: auto !important;
-     -moz-user-select: auto !important;
+    -moz-user-select: auto !important;
           user-select: auto !important;
 }
 
 .user-select-none {
   -webkit-user-select: none !important;
-     -moz-user-select: none !important;
+    -moz-user-select: none !important;
           user-select: none !important;
 }
 
@@ -11404,4 +11404,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 .text-success2 {
   --bs-text-opacity2: 1;
   color: rgba(var(--bs-success-rgb), var(--bs-text-opacity2)) !important;
+}
+.bg-success2 {
+  background-color: #009999 !important;
+  color: #ffffff !important;
 }
