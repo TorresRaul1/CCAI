@@ -71,10 +71,12 @@
                   <div class="card-body p-5">
                     <div class="text-center mb-4">
                       <h1 class="fw-bolder mb-0">
-                        <span class="d-inline text-shadow text-primario-600">Contáctanos</span>
+                        <span class="d-inline text-shadow text-primario-600">Únete al CCAI</span>
                       </h1>
                     </div>
-                    <p class="text-muted text-center">Llena el formulario y forma parte de nuestro equipo de profesionales.<br>Aceptamos estudiantes para servicio social y residencias profesionales.</p>
+                    <p class="text-muted text-center">Llena el formulario y forma parte del equipo del CCAI.<br>
+                      Estamos en busca de estudiantes comprometidos para realizar su servicio social o residencias profesionales colaborando en proyectos reales con impacto.<br>
+                      Aceptamos estudiantes para servicio social y residencias profesionales.</p>
                     <form id="mainForm">
                       <div class="row g-3 mb-3">
                         <div class="col-md-6">
@@ -85,10 +87,17 @@
                           </div>
                         </div>
                         <div class="col-md-6">
-                          <label for="apellidos" class="form-label">Apellidos</label>
+                          <label for="apellidos" class="form-label">Apellido Paterno</label>
                           <div class="d-flex align-items-center bg-light rounded-4 p-2">
                             <i class="bi bi-person-fill me-2"></i>
-                            <input type="text" class="form-control bg-light border-0" placeholder="Lopez Perez" required>
+                            <input type="text" class="form-control bg-light border-0" placeholder="Lopez" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="apellidos" class="form-label">Apellido Materno</label>
+                          <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                            <i class="bi bi-person-fill me-2"></i>
+                            <input type="text" class="form-control bg-light border-0" placeholder="Perez" required>
                           </div>
                         </div>
                         <div class="col-md-6">
@@ -178,21 +187,63 @@
                         <div class="bg-light rounded-4 p-4 mt-3">
                           <h5>Información para Consultores</h5>
                           <div class="mb-3">
-                            <label class="form-label">Experiencia laboral</label>
-                            <textarea class="form-control" rows="3" placeholder="Describe tu experiencia laboral relevante..."></textarea>
+                            <label class="form-label">¿Cuál es su grado académico actual?</label>
+                            <select class="form-select" id="gradoSelect">
+                              <option selected disabled>Selecciona una opción</option>
+                              <option value="doct">Doctorado</option>
+                              <option value="maes">Maestría</option>
+                              <option value="lice">Licenciatura</option>
+                              <option value="otras">Otras</option>
+                            </select>
+                            <!-- Campo oculto que se mostrará si eligen "Otras" -->
+                            <div class="mb-3 d-none" id="otraGradoDiv sectorSelect">
+                              <label class="form-label">Por favor, especifica:</label>
+                              <input type="text" class="form-control" id="otraGradoInput" placeholder="Escribe tu grado académico">
+                            </div>
                           </div>
+                              
                           <div class="mb-3">
-                            <label class="form-label">Áreas de especialización</label>
+                            <label class="form-label">Título nivel licenciatura</label>
                             <input type="text" class="form-control" placeholder="Ejemplo: Finanzas, Recursos Humanos, Tecnología...">
                           </div>
                           <div class="mb-3">
-                            <label class="form-label">Disponibilidad</label>
-                            <select class="form-select">
-                              <option selected disabled>Selecciona tu disponibilidad</option>
-                              <option>Medio tiempo</option>
-                              <option>Tiempo completo</option>
-                              <option>Por proyecto</option>
+                            <label class="form-label"> Título nivel maestría</label>
+                            <textarea class="form-control" rows="3" placeholder="Describe tu experiencia laboral relevante..."></textarea>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Título nivel doctorado</label>
+                            <input type="text" class="form-control" placeholder="Ejemplo: Finanzas, Recursos Humanos, Tecnología...">
+                          </div>
+                          <h5>Experiencia Laboral</h5>
+                          <div class="mb-3">
+                            <label class="form-label">¿En qué sector se ha desempeñado laboralmente?</label>
+                            <select class="form-select" id="sectorSelect">
+                              <option selected disabled>Selecciona una opción</option>
+                              <option value="agro">Agropecuario</option>
+                              <option value="indus">Industrial</option>
+                              <option value="comer">Comercial</option>
+                              <option value="serv">Servicio</option>
+                              <option value="otras">Otras</option>
                             </select>
+                            <div class="mb-3 d-none" id="otroSectorDiv">
+                              <label class="form-label">Por favor, especifica:</label>
+                              <input type="text" class="form-control" id="otroSectorInput" placeholder="Escribe el sector laboral">
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">¿Con cuántos años de experiencia cuenta en el sector laboral? (No incluya su experiencia docente)</label>
+                            <select class="form-select">
+                              <option selected disabled>Selecciona una opción</option>
+                              <option>1 a 3 años</option>
+                              <option>4 a 6 años</option>
+                              <option>7 a 9 años</option>
+                              <option>10 a 12 años</option>
+                              <option>más de 12 años</option>
+                            </select>
+                            <div class="mb-3 d-none" id="otroañosexpDiv">
+                              <label class="form-label">Por favor, especifica:</label>
+                              <input type="text" class="form-control" id="otroSectorInput" placeholder="Escribe el sector laboral">
+                            </div>
                           </div>
                           <div class="mb-3">
                             <label class="form-label">Curriculum Vitae (CV)</label>
@@ -241,6 +292,47 @@
                 </div>
             </div>
         </footer>
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const gradoSelect = document.getElementById("gradoSelect");
+            const otraGradoDiv = document.getElementById("otraGradoDiv");
+
+            gradoSelect.addEventListener("change", () => {
+              if (gradoSelect.value === "otras") {
+                otraGradoDiv.classList.remove("d-none");
+              } else {
+                otraGradoDiv.classList.add("d-none");
+              }
+            });
+          
+          // Para sector laboral
+            const sectorSelect = document.getElementById("sectorSelect");
+            const sectorInput = document.getElementById("otroSectorDiv");
+
+            sectorSelect.addEventListener("change", () => {
+              if (sectorSelect.value === "otras") {
+                otroSectorDiv.classList.remove("d-none");
+              } else {
+                otroSectorDiv.classList.add("d-none");
+              }
+            });
+
+            /*Para sector laboral
+            const añosexpSelect = document.getElementById("sectorSelect");
+            const sectorInput = document.getElementById("otroSectorDiv");
+
+            sectorSelect.addEventListener("change", () => {
+              if (sectorSelect.value === "otras") {
+                otroSectorDiv.classList.remove("d-none");
+              } else {
+                otroSectorDiv.classList.add("d-none");
+              }
+            });*/
+
+          });
+        </script>
+
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

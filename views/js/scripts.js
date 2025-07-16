@@ -91,4 +91,5 @@ window.addEventListener('DOMContentLoaded', event => {
             toast.show();
         });
     }
+
 });
