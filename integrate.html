@@ -22,12 +22,10 @@
             <div class="container-fluid">
                 <!-- Logo -->
                 <a class="navbar-brand" href="index.html"><img src="Views/img/logo.png" alt="Logo" /></a>
-
                 <!-- Botón hamburguesa (móvil) -->
                 <button class=" navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">MENU <i class="fas fa-bars ms-1"></i>
                 </button>
-
                 <!-- Menú completo -->
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0 d-lg-flex align-items-lg-center flex-column flex-lg-row text-center w-100 justify-content-between">
@@ -66,131 +64,217 @@
             </div>
         </header>
         <section class="py-5">
-  <div class="container px-5 mb-5">
-    <div class="row gx-5 justify-content-center">
-      <div class="col-lg-11 col-xl-9 col-xxl-8">
-        <div class="card shadow border-0 rounded-4 mb-5">
-          <div class="card-body p-5">
-            <div class="text-center mb-4">
-              <h1 class="fw-bolder mb-0">
-                <span class="text-gradient d-inline">Contáctanos</span>
-              </h1>
+          <div class="container px-5 mb-5">
+            <div class="row gx-5 justify-content-center">
+              <div class="col-lg-11 col-xl-9 col-xxl-8">
+                <div class="card shadow border-0 rounded-4 mb-5">
+                  <div class="card-body p-5">
+                    <div class="text-center mb-4">
+                      <h1 class="fw-bolder mb-0">
+                        <span class="d-inline text-shadow text-primario-600">Únete al CCAI</span>
+                      </h1>
+                    </div>
+                    <p class="text-muted text-center">Llena el formulario y forma parte del equipo del CCAI.<br>
+                      Estamos en busca de estudiantes comprometidos para realizar su servicio social o residencias profesionales colaborando en proyectos reales con impacto.<br>
+                      Aceptamos estudiantes para servicio social y residencias profesionales.</p>
+                    <form id="mainForm">
+                      <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                          <label for="nombres" class="form-label">Nombre/s</label>
+                          <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                            <i class="bi bi-person-circle me-2"></i>
+                            <input type="text" class="form-control bg-light border-0" placeholder="Luis Angel" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="apellidos" class="form-label">Apellido Paterno</label>
+                          <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                            <i class="bi bi-person-fill me-2"></i>
+                            <input type="text" class="form-control bg-light border-0" placeholder="Lopez" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="apellidos" class="form-label">Apellido Materno</label>
+                          <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                            <i class="bi bi-person-fill me-2"></i>
+                            <input type="text" class="form-control bg-light border-0" placeholder="Perez" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="edadInput" class="form-label">Edad</label>
+                          <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                            <i class="bi bi-123 me-2"></i>
+                            <input type="number" id="edadInput" class="form-control bg-light border-0" placeholder="18" min="18" step="1" required>
+                          </div>
+                          <div class="invalid-feedback ms-2">
+                            La edad mínima permitida es 18 años.
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="telefono" class="form-label">Teléfono</label>
+                          <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            <input type="tel" class="form-control bg-light border-0" placeholder="(+52) 55 55555555" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="email" class="form-label">Correo Electrónico</label>
+                          <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            <input type="email" class="form-control bg-light border-0" placeholder="ejemplo@gmail.com" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="area" class="form-label">Puesto o Área de interés</label>
+                          <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                            <i class="bi bi-person-badge-fill me-2"></i>
+                            <input type="text" class="form-control bg-light border-0" placeholder="Desarrolllador" required>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <label for="telefono" class="form-label">Rol o modalidad</label>
+                          <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                            <i class="bi bi-puzzle-fill me-2"></i>
+                            <select id="rolSelect" class="form-select bg-light border-0" required>
+                              <option selected disabled>Selecciona una opción</option>
+                              <option>Consultor</option>
+                              <option>Servicio Social</option>
+                              <option>Residencias Profesionales</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- Formulario adicional -->
+                        <div id="extraForm" class="col-12 d-none">
+                          <div class="bg-light rounded-4 p-4 mt-3">
+                            <h5>Información para Servicio Social o Residencias Profesionales</h5>
+                            <div class="mb-3">
+                              <label class="form-label">Escuela / Universidad</label>
+                              <input type="text" class="form-control" placeholder="Nombre de la institución">
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label">Carrera</label>
+                              <input type="text" class="form-control" placeholder="Tu carrera o especialidad">
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label">Semestre / Cuatrimestre</label>
+                              <div class="d-flex align-items-center form-control rounded-4 p-2">
+                              <i class="bi bi-puzzle-fill me-2"></i>
+                              <select id="semestreSelect" class="form-select form-control border-0" required>
+                                <option selected disabled>Selecciona una opción</option>
+                                <option>Semestre</option>
+                                <option>Cuatrimestre</option>
+                              </select>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label">Periodo actual</label>
+                              <input type="text" class="form-control" placeholder="Octavo">
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label">Promedio global</label>
+                              <input type="text" class="form-control" placeholder="70">
+                            </div>
+                            <div class="mb-3">
+                            <label class="form-label">Curriculum Vitae (CV)</label>
+                            <p class="text-muted small fst-italic">Carga el archivo de tu CV en formato pdf</p>
+                            <input type="file" class="form-control">
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Formulario adicional para Consultor (EJEMPLO) -->
+                      <div id="consultorForm" class="col-12 d-none">
+                        <div class="bg-light rounded-4 p-4 mt-3">
+                          <h5>Información para Consultores</h5>
+                          <div class="mb-3">
+                            <label class="form-label">¿Cuál es su grado académico actual?</label>
+                            <select class="form-select" id="gradoSelect">
+                              <option selected disabled>Selecciona una opción</option>
+                              <option value="doct">Doctorado</option>
+                              <option value="maes">Maestría</option>
+                              <option value="lice">Licenciatura</option>
+                              <option value="otras">Otras</option>
+                            </select>
+                            <!-- Campo oculto que se mostrará si eligen "Otras" -->
+                            <div class="mb-3 d-none" id="otraGradoDiv sectorSelect">
+                              <label class="form-label">Por favor, especifica:</label>
+                              <input type="text" class="form-control" id="otraGradoInput" placeholder="Escribe tu grado académico">
+                            </div>
+                          </div>
+                              
+                          <div class="mb-3">
+                            <label class="form-label">Título nivel licenciatura</label>
+                            <input type="text" class="form-control" placeholder="Ejemplo: Finanzas, Recursos Humanos, Tecnología...">
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label"> Título nivel maestría</label>
+                            <textarea class="form-control" rows="3" placeholder="Describe tu experiencia laboral relevante..."></textarea>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Título nivel doctorado</label>
+                            <input type="text" class="form-control" placeholder="Ejemplo: Finanzas, Recursos Humanos, Tecnología...">
+                          </div>
+                          <h5>Experiencia Laboral</h5>
+                          <div class="mb-3">
+                            <label class="form-label">¿En qué sector se ha desempeñado laboralmente?</label>
+                            <select class="form-select" id="sectorSelect">
+                              <option selected disabled>Selecciona una opción</option>
+                              <option value="agro">Agropecuario</option>
+                              <option value="indus">Industrial</option>
+                              <option value="comer">Comercial</option>
+                              <option value="serv">Servicio</option>
+                              <option value="otras">Otras</option>
+                            </select>
+                            <div class="mb-3 d-none" id="otroSectorDiv">
+                              <label class="form-label">Por favor, especifica:</label>
+                              <input type="text" class="form-control" id="otroSectorInput" placeholder="Escribe el sector laboral">
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">¿Con cuántos años de experiencia cuenta en el sector laboral? (No incluya su experiencia docente)</label>
+                            <select class="form-select">
+                              <option selected disabled>Selecciona una opción</option>
+                              <option>1 a 3 años</option>
+                              <option>4 a 6 años</option>
+                              <option>7 a 9 años</option>
+                              <option>10 a 12 años</option>
+                              <option>más de 12 años</option>
+                            </select>
+                            <div class="mb-3 d-none" id="otroañosexpDiv">
+                              <label class="form-label">Por favor, especifica:</label>
+                              <input type="text" class="form-control" id="otroSectorInput" placeholder="Escribe el sector laboral">
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Curriculum Vitae (CV)</label>
+                            <p class="text-muted small fst-italic">Carga el archivo de tu CV en formato pdf</p>
+                            <input type="file" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                      <div id="submitBtnContainer" class="text-center mt-4 d-none">
+                        <button id="sendButton" type="button" class="btn btn-outline-primary btn-lg px-5 py-3 fw-bolder">Enviar</button>
+                      </div>
+                    </form>
+                    <!-- Toast -->
+                    <div class="toast-container position-fixed top-50 start-50 translate-middle p-3">
+                      <div id="messageToast" class="toast text-white bg-success2 border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header bg-success2 text-white">
+                          <strong class="me-auto">Mensaje</strong>
+                          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body text-center">
+                          <p class="mb-1">Hemos recibido tu solicitud, pronto nos pondremos en contacto contigo.</p>
+                          <p class="mb-0">¡Gracias por tu interés en nuestros servicios! 😊</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- card-body -->
+                </div> <!-- card -->
+              </div>
             </div>
-            <p class="text-muted text-center">Llena el formulario y forma parte de nuestro equipo de profesionales.<br>Aceptamos estudiantes para servicio social y residencias profesionales.</p>
-
-            <form id="mainForm">
-              <div class="row g-3 mb-3">
-                <div class="col-md-6">
-                  
-                  <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                    <i class="bi bi-person-circle me-2"></i>
-                    <input type="text" class="form-control bg-light border-0" placeholder="Nombre/s" required>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                    <i class="bi bi-person-fill me-2"></i>
-                    <input type="text" class="form-control bg-light border-0" placeholder="Apellidos" required>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                    <i class="bi bi-123 me-2"></i>
-                    <input type="number" class="form-control bg-light border-0" placeholder="Edad" required>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                    <i class="bi bi-telephone-fill me-2"></i>
-                    <input type="tel" class="form-control bg-light border-0" placeholder="Teléfono" required>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                    <i class="bi bi-envelope-fill me-2"></i>
-                    <input type="email" class="form-control bg-light border-0" placeholder="Correo electrónico" required>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                    <i class="bi bi-person-badge-fill me-2"></i>
-                    <input type="text" class="form-control bg-light border-0" placeholder="Puesto o Área de interés" required>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                    <i class="bi bi-puzzle-fill me-2"></i>
-                    <select id="rolSelect" class="form-select bg-light border-0" required>
-                      <option selected disabled>Rol o modalidad</option>
-                      <option>Consultor</option>
-                      <option>Servicio Social</option>
-                      <option>Residencias Profesionales</option>
-                    </select>
-                  </div>
-                </div>
-
-                <!-- Formulario adicional -->
-                <div id="extraForm" class="col-12 d-none">
-                  <div class="bg-light rounded-4 p-4 mt-3">
-                    <h5>Formulario adicional (ejemplo)</h5>
-                    <div class="mb-3">
-                      <label class="form-label">Escuela / Universidad</label>
-                      <input type="text" class="form-control" placeholder="Nombre de la institución">
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Carrera</label>
-                      <input type="text" class="form-control" placeholder="Tu carrera o especialidad">
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Periodo de servicio</label>
-                      <input type="text" class="form-control" placeholder="Ej. Enero - Junio 2025">
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div id="submitBtnContainer" class="text-center mt-4 d-none">
-                <button type="submit" class="btn btn-outline-primary btn-lg px-5 py-3 fw-bolder">Enviar</button>
-              </div>
-            </form>
-
-            <!-- Toast -->
-            <div class="toast-container position-fixed top-50 start-50 translate-middle p-3">
-              <div id="messageToast" class="toast text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header bg-success text-white">
-                  <strong class="me-auto">Mensaje</strong>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body text-center">
-                  <p class="mb-1">Hemos recibido tu solicitud, pronto nos pondremos en contacto contigo.</p>
-                  <p class="mb-0">¡Gracias por tu interés en nuestros servicios! 😊</p>
-                </div>
-              </div>
-            </div>
-          </div> <!-- card-body -->
-        </div> <!-- card -->
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-  const rolSelect = document.getElementById('rolSelect');
-  const extraForm = document.getElementById('extraForm');
-  const submitBtnContainer = document.getElementById('submitBtnContainer');
-
-  rolSelect.addEventListener('change', () => {
-    const value = rolSelect.value;
-    if (value === 'Servicio Social' || value === 'Residencias Profesionales') {
-      extraForm.classList.remove('d-none');
-      submitBtnContainer.classList.remove('d-none');
-    } else {
-      extraForm.classList.add('d-none');
-      submitBtnContainer.classList.add('d-none');
-    }
-  });
-</script>
-
+          </div>
+        </section>
         <!-- Footer -->
         <footer class="bg-white py-4 mt-auto table-group-divider ">
             <div class="container-fluid px-0">
@@ -208,6 +292,47 @@
                 </div>
             </div>
         </footer>
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const gradoSelect = document.getElementById("gradoSelect");
+            const otraGradoDiv = document.getElementById("otraGradoDiv");
+
+            gradoSelect.addEventListener("change", () => {
+              if (gradoSelect.value === "otras") {
+                otraGradoDiv.classList.remove("d-none");
+              } else {
+                otraGradoDiv.classList.add("d-none");
+              }
+            });
+          
+          // Para sector laboral
+            const sectorSelect = document.getElementById("sectorSelect");
+            const sectorInput = document.getElementById("otroSectorDiv");
+
+            sectorSelect.addEventListener("change", () => {
+              if (sectorSelect.value === "otras") {
+                otroSectorDiv.classList.remove("d-none");
+              } else {
+                otroSectorDiv.classList.add("d-none");
+              }
+            });
+
+            /*Para sector laboral
+            const añosexpSelect = document.getElementById("sectorSelect");
+            const sectorInput = document.getElementById("otroSectorDiv");
+
+            sectorSelect.addEventListener("change", () => {
+              if (sectorSelect.value === "otras") {
+                otroSectorDiv.classList.remove("d-none");
+              } else {
+                otroSectorDiv.classList.add("d-none");
+              }
+            });*/
+
+          });
+        </script>
+
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -215,7 +340,7 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *--
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>--Z-->
     </body>
 </html>
