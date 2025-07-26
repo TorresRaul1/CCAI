@@ -79,6 +79,7 @@
                       Aceptamos estudiantes para servicio social y residencias profesionales.</p>
                     <form id="mainForm">
                       <div class="row g-3 mb-3">
+                        <h4>Datos Personales</h4>
                         <div class="col-md-6">
                           <label for="nombres" class="form-label">Nombre/s</label>
                           <div class="d-flex align-items-center bg-light rounded-4 p-2">
@@ -110,6 +111,7 @@
                             La edad mínima permitida es 18 años.
                           </div>
                         </div>
+                        <h4>Contacto</h4>
                         <div class="col-md-6">
                           <label for="telefono" class="form-label">Teléfono</label>
                           <div class="d-flex align-items-center bg-light rounded-4 p-2">
@@ -143,7 +145,7 @@
                             </select>
                           </div>
                         </div>
-                        <!-- Formulario adicional -->
+                        <!-- Formulario adicional de SS y RP-->
                         <div id="extraForm" class="col-12 d-none">
                           <div class="bg-light rounded-4 p-4 mt-3">
                             <h5>Información para Servicio Social o Residencias Profesionales</h5>
@@ -196,19 +198,18 @@
                               <option value="otras">Otras</option>
                             </select>
                             <!-- Campo oculto que se mostrará si eligen "Otras" -->
-                            <div class="mb-3 d-none" id="otraGradoDiv sectorSelect">
+                            <div class="mb-3 d-none" id="otraGradoDiv">
                               <label class="form-label">Por favor, especifica:</label>
                               <input type="text" class="form-control" id="otraGradoInput" placeholder="Escribe tu grado académico">
                             </div>
                           </div>
-                              
                           <div class="mb-3">
                             <label class="form-label">Título nivel licenciatura</label>
                             <input type="text" class="form-control" placeholder="Ejemplo: Finanzas, Recursos Humanos, Tecnología...">
                           </div>
                           <div class="mb-3">
                             <label class="form-label"> Título nivel maestría</label>
-                            <textarea class="form-control" rows="3" placeholder="Describe tu experiencia laboral relevante..."></textarea>
+                            <input type="text" class="form-control" placeholder="Ejemplo: Finanzas, Recursos Humanos, Tecnología..."></input>
                           </div>
                           <div class="mb-3">
                             <label class="form-label">Título nivel doctorado</label>
@@ -240,16 +241,88 @@
                               <option>10 a 12 años</option>
                               <option>más de 12 años</option>
                             </select>
-                            <div class="mb-3 d-none" id="otroañosexpDiv">
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">¿Cuál ha sido el mayor nivel jerárquico que ha alcanzado en el ámbito laboral?</label>
+                            <select class="form-select" id="nivelSelect">
+                              <option selected disabled>Selecciona una opción</option>
+                              <option value="dire">Dirección</option>
+                              <option value="subdire">Subdirección</option>
+                              <option value="gere">Gerencia</option>
+                              <option value="subgere">Subgerencia</option>
+                              <option value="jefa">Jefatura</option>
+                              <option value="super">Supervisión</option>
+                              <option value="lider">Líder de proyecto</option>
+                              <option value="otras">Otras</option>
+                            </select>
+                            <div class="mb-3 d-none" id="otroNivelDiv">
                               <label class="form-label">Por favor, especifica:</label>
-                              <input type="text" class="form-control" id="otroSectorInput" placeholder="Escribe el sector laboral">
+                              <input type="text" class="form-control" id="otroNivelInput" placeholder="Escribe el sector laboral">
                             </div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Agregue los tres últimos puestos que ha ocupado en el ámbito laboral</label>
+                            <input type="text" class="form-control" placeholder="Escriba su respuesta">
+                          </div>
+                          <h5>Formación en investigación y consultoría</h5>
+                          <div class="mb-3">
+                            <label class="form-label">¿Realiza o ha realizado investigación científica?</label>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="investigacion" id="investigacionSi" value="si">
+                              <label class="form-check-label text-black" for="investigacionSi">Sí</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="investigacion" id="investigacionNo" value="no">
+                              <label class="form-check-label text-black" for="investigacionNo">No</label>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">¿Cuenta usted con artículos científicos publicados en plataformas arbitradas?</label>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="investigacion" id="investigacionSi" value="si">
+                              <label class="form-check-label text-black" for="investigacionSi">Sí</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="investigacion" id="investigacionNo" value="no">
+                              <label class="form-check-label text-black" for="investigacionNo">No</label>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">¿Cuáles son sus líneas de investigación?</label>
+                            <input type="text" class="form-control" placeholder="Escriba su respuesta">
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">¿Ha brindado usted servicios a empresas, cómo freelancer o consultor?</label>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="investigacion" id="investigacionSi" value="si">
+                              <label class="form-check-label text-black" for="investigacionSi">Sí</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="investigacion" id="investigacionNo" value="no">
+                              <label class="form-check-label text-black" for="investigacionNo">No</label>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">¿Expide usted facturas o recibos de honorarios?</label>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="investigacion" id="investigacionSi" value="si">
+                              <label class="form-check-label text-black" for="investigacionSi">Sí</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="investigacion" id="investigacionNo" value="no">
+                              <label class="form-check-label text-black" for="investigacionNo">No</label>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Indique tres servicios que usted puede ofrecer al sector industrial o empresarial</label>
+                            <input type="text" class="form-control" placeholder="Escriba su respuesta">
                           </div>
                           <div class="mb-3">
                             <label class="form-label">Curriculum Vitae (CV)</label>
                             <p class="text-muted small fst-italic">Carga el archivo de tu CV en formato pdf</p>
                             <input type="file" class="form-control">
                           </div>
+                          
                         </div>
                       </div>
                       <div id="submitBtnContainer" class="text-center mt-4 d-none">
@@ -317,17 +390,17 @@
               }
             });
 
-            /*Para sector laboral
-            const añosexpSelect = document.getElementById("sectorSelect");
-            const sectorInput = document.getElementById("otroSectorDiv");
+            //Para nivel jerárquico
+            const nivelSelect = document.getElementById("nivelSelect");
+            const nivelInput = document.getElementById("otroNivelDiv");
 
-            sectorSelect.addEventListener("change", () => {
-              if (sectorSelect.value === "otras") {
-                otroSectorDiv.classList.remove("d-none");
+            nivelSelect.addEventListener("change", () => {
+              if (nivelSelect.value === "otras") {
+                otroNivelDiv.classList.remove("d-none");
               } else {
-                otroSectorDiv.classList.add("d-none");
+                otroNivelDiv.classList.add("d-none");
               }
-            });*/
+            });
 
           });
         </script>
