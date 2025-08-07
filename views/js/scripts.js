@@ -1,3 +1,5 @@
+//Este script se ejecuta cuando el DOM está completamente cargado
+// y se encarga de manejar la navegación, formularios y validaciones.
 window.addEventListener('DOMContentLoaded', event => {
     // Navbar shrink function
     var navbarShrink = function () {
@@ -23,6 +25,7 @@ window.addEventListener('DOMContentLoaded', event => {
             rootMargin: '0px 0px -40%',
         });
     };
+    
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
@@ -68,7 +71,8 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     });
     }
-    // Edad: Validación
+    //
+    //Esta funcion valida la edad, que sea mayor de 18,  Edad: Validación
     const edadInput = document.getElementById('edadInput');
     if (edadInput) {
         edadInput.addEventListener('input', () => {

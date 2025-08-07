@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Metadatos y recursos -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>CCAI</title>
+        <title>CCAI - Contacto</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -21,15 +22,17 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body id="page-top">
-        <!-- Navigation-->
+        <!-- ==================== BARRA DE NAVEGACIÓN ==================== -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container-fluid">
-                <!-- Logo -->
+                <!-- Logo que redirige a la página principal -->
                 <a class="navbar-brand" href="index.html"><img src="Views/img/logo.png" alt="Logo" /></a>
+                
                 <!-- Botón hamburguesa (móvil) -->
                 <button class=" navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">MENU <i class="fas fa-bars ms-1"></i>
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> MENU <i class="fas fa-bars ms-1"></i>
                 </button>
+                
                 <!-- Menú completo -->
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0 d-lg-flex align-items-lg-center flex-column flex-lg-row text-center w-100 justify-content-between">
@@ -60,21 +63,24 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
+        <!-- ==================== CABECERA PRINCIPAL ==================== -->
         <header class="masthead">
             <div class="container">
-                <!---->
                 <div class="masthead-heading text-uppercase">¿tienes una idea?</div>
                 <div class="masthead-subheading">Nosotros la desarrollamos contigo</div>
                 <div class="masthead-subheading">Contáctanos y da el primer paso</div>
             </div>
         </header>
+
+        <!-- ==================== SECCIÓN DEL FORMULARIO DE CONTACTO==================== -->
         <section class="py-5">
             <div class="container px-5 mb-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        <!-- Tarjeta contenedora del formulario -->
                         <div class="card shadow border-0 rounded-4 mb-5">
                             <div class="card-body p-5">
+                                <!-- Título y descripción -->
                                 <div class="text-center mb-4">
                                     <h1 class="fw-bolder mb-0">
                                         <span class="d-inline text-shadow text-primario-600">Contáctanos</span>
@@ -85,7 +91,16 @@
                                     <input type="hidden" name="_subject" value="Nueva solicitud desde el sitio CCAI">
                                     <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
 
+                                <p class="text-muted text-center">
+                                    ¿En qué podemos ayudarte? Mándanos un mensaje y uno de nuestros especialistas se comunicará contigo pronto.<br>
+                                    Por favor, completa el siguiente formulario:
+                                </p>
+                                <!-- ===== FORMULARIO PRINCIPAL ===== -->
+                                <form>
+                                    <!-- Campos del formulario organizados en filas -->
+
                                     <div class="row g-3 mb-3">
+                                        <!-- Campos individuales... -->
                                         <div class="col-md-6">
                                             <label for="nombre" class="form-label">Nombre completo</label>
                                             <div class="d-flex align-items-center bg-light rounded-4 p-2">
@@ -143,11 +158,12 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Botón de envío -->
                                     <div class="text-center mt-4">
                                         <button type="submit" class="btn btn-outline-primary btn-lg px-5 py-3 fw-bolder">Enviar</button>
                                     </div>
                                 </form>
-                                <!-- Toast -->
+                                <!-- Mensaje de envio -->
                                 <div class="toast-container position-fixed top-50 start-50 translate-middle p-3">
                                     <div id="messageToast" class="toast text-white bg-success2 border-0" role="alert" aria-live="assertive" aria-atomic="true">
                                         <div class="toast-header bg-success2 text-white">
@@ -160,13 +176,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div> <!-- card-body -->
-                        </div> <!-- card -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Page content-->
+        <!-- SECCIÓN DE UBICACIÓN-->
         <section class="py-1"> <!-- Aumenté el padding vertical -->
             <div class="container shadow rounded-4 bg-white mb-5"> <!-- mb-5 da espacio con el footer -->
                 <div class="px-4 py-5"> <!-- Espaciado interior -->
