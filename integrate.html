@@ -90,7 +90,9 @@
                                 </p>
                                 
                                 <!-- ===== FORMULARIO PRINCIPAL ===== -->
-                                <form id="mainForm">
+                                <form id="mainForm" action="https://formsubmit.co/isabelpopoca1103@gmail.com" method="POST">
+                                    <input type="hidden" name="_subject" value="Nueva solicitud para integrarse al CCAI">
+                                    <input type="hidden" name="_next" value="https://148.230.236.165/CCAI/gracias.html">
                                     <!-- SECCIÓN 1: DATOS PERSONALES -->
                                     <div class="row g-3 mb-3">
                                         <h4>Datos Personales</h4>
@@ -100,7 +102,7 @@
                                             <label for="nombres" class="form-label">Nombre/s</label>
                                             <div class="d-flex align-items-center bg-light rounded-4 p-2">
                                                 <i class="bi bi-person-circle me-2"></i>
-                                                <input type="text" class="form-control bg-light border-0" placeholder="Luis Angel" required>
+                                                <input type="text" class="form-control bg-light border-0" name="Nombre completo" placeholder="Luis Angel" required>
                                             </div>
                                         </div>
                                         
@@ -109,7 +111,7 @@
                                             <label for="apellidos" class="form-label">Apellido Paterno</label>
                                             <div class="d-flex align-items-center bg-light rounded-4 p-2">
                                                 <i class="bi bi-person-fill me-2"></i>
-                                                <input type="text" class="form-control bg-light border-0" placeholder="Lopez" required>
+                                                <input type="text" class="form-control bg-light border-0" name="Apellido Paterno" placeholder="Lopez" required>
                                             </div>
                                         </div>
                                         
@@ -118,7 +120,7 @@
                                             <label for="apellidos" class="form-label">Apellido Materno</label>
                                             <div class="d-flex align-items-center bg-light rounded-4 p-2">
                                                 <i class="bi bi-person-fill me-2"></i>
-                                                <input type="text" class="form-control bg-light border-0" placeholder="Perez" required>
+                                                <input type="text" class="form-control bg-light border-0" name="Apellido Materno"placeholder="Perez" required>
                                             </div>
                                         </div>
                                         
@@ -127,7 +129,7 @@
                                             <label for="edadInput" class="form-label">Edad</label>
                                             <div class="d-flex align-items-center bg-light rounded-4 p-2">
                                                 <i class="bi bi-123 me-2"></i>
-                                                <input type="number" id="edadInput" class="form-control bg-light border-0" placeholder="18" min="18" step="1" required>
+                                                <input type="number" id="edadInput" class="form-control bg-light border-0" name="Edad" placeholder="18" min="18" step="1" required>
                                             </div>
                                             <div class="invalid-feedback ms-2">
                                                 La edad mínima permitida es 18 años.
@@ -142,7 +144,7 @@
                                             <label for="telefono" class="form-label">Teléfono</label>
                                             <div class="d-flex align-items-center bg-light rounded-4 p-2">
                                                 <i class="bi bi-telephone-fill me-2"></i>
-                                                <input type="tel" class="form-control bg-light border-0" placeholder="(+52) 55 55555555" required>
+                                                <input type="tel" class="form-control bg-light border-0" name="Telefono"placeholder="(+52) 55 55555555" required>
                                             </div>
                                         </div>
                                         
@@ -151,7 +153,7 @@
                                             <label for="email" class="form-label">Correo Electrónico</label>
                                             <div class="d-flex align-items-center bg-light rounded-4 p-2">
                                                 <i class="bi bi-envelope-fill me-2"></i>
-                                                <input type="email" class="form-control bg-light border-0" placeholder="ejemplo@gmail.com" required>
+                                                <input type="email" class="form-control bg-light border-0" name="Correo"placeholder="ejemplo@gmail.com" required>
                                             </div>
                                         </div>
                                         
@@ -160,7 +162,7 @@
                                             <label for="area" class="form-label">Puesto o Área de interés</label>
                                             <div class="d-flex align-items-center bg-light rounded-4 p-2">
                                                 <i class="bi bi-person-badge-fill me-2"></i>
-                                                <input type="text" class="form-control bg-light border-0" placeholder="Desarrolllador" required>
+                                                <input type="text" class="form-control bg-light border-0" name="Puesto" placeholder="Desarrolllador" required>
                                             </div>
                                         </div>
                                         
@@ -169,7 +171,7 @@
                                             <label for="telefono" class="form-label">Rol o modalidad</label>
                                             <div class="d-flex align-items-center bg-light rounded-4 p-2">
                                                 <i class="bi bi-puzzle-fill me-2"></i>
-                                                <select id="rolSelect" class="form-select bg-light border-0" required>
+                                                <select name="Rol o modalidad" id="rolSelect" class="form-select bg-light border-0" namerequired>
                                                     <option selected disabled>Selecciona una opción</option>
                                                     <option>Consultor</option>
                                                     <option>Servicio Social</option>
@@ -186,17 +188,17 @@
                                                 <!-- Campos específicos para estudiantes -->
                                                 <div class="mb-3">
                                                     <label class="form-label">Escuela / Universidad</label>
-                                                    <input type="text" class="form-control" placeholder="Nombre de la institución">
+                                                    <input type="text" class="form-control" name="Escuela / Universidad" placeholder="Nombre de la institución">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">Carrera</label>
-                                                    <input type="text" class="form-control" placeholder="Tu carrera o especialidad">
+                                                    <input type="text" class="form-control" name="Carrera" placeholder="Tu carrera o especialidad">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">Semestre / Cuatrimestre</label>
                                                     <div class="d-flex align-items-center form-control rounded-4 p-2">
                                                     <i class="bi bi-puzzle-fill me-2"></i>
-                                                    <select id="semestreSelect" class="form-select form-control border-0" required>
+                                                    <select id="semestreSelect" class="form-select form-control border-0" name="Tipo de periodo" required>
                                                         <option selected disabled>Selecciona una opción</option>
                                                         <option>Semestre</option>
                                                         <option>Cuatrimestre</option>
@@ -205,16 +207,16 @@
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">Periodo actual</label>
-                                                    <input type="text" class="form-control" placeholder="Octavo">
+                                                    <input type="text" class="form-control" name="Periodo actual" placeholder="Octavo">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">Promedio global</label>
-                                                    <input type="text" class="form-control" placeholder="70">
+                                                    <input type="text" class="form-control" name="Promedio global" placeholder="70">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">Curriculum Vitae (CV)</label>
                                                     <p class="text-muted small fst-italic">Carga el archivo de tu CV en formato pdf</p>
-                                                    <input type="file" class="form-control">
+                                                    <input type="file" class="form-control" name="CV (Servicio Social)">
                                                 </div>
                                             </div>
                                         </div>
@@ -227,7 +229,7 @@
                                                 <!-- Grado académico -->
                                                 <div class="mb-3">
                                                     <label class="form-label">¿Cuál es su grado académico actual?</label>
-                                                    <select class="form-select" id="gradoSelect">
+                                                    <select class="form-select" id="gradoSelect" name="Grado académico actual">
                                                         <option selected disabled>Selecciona una opción</option>
                                                         <option value="doct">Doctorado</option>
                                                         <option value="maes">Maestría</option>
@@ -237,29 +239,29 @@
                                                     <!-- Campo condicional para "Otras" opciones -->
                                                     <div class="mb-3 d-none" id="otraGradoDiv">
                                                         <label class="form-label">Por favor, especifica:</label>
-                                                        <input type="text" class="form-control" id="otraGradoInput" placeholder="Escribe tu grado académico">
+                                                        <input type="text" class="form-control" id="otraGradoInput" name="Otro grado académico" placeholder="Escribe tu grado académico">
                                                     </div>
                                                 </div>
                                                 
                                                 <!-- Títulos académicos -->
                                                 <div class="mb-3">
                                                     <label class="form-label">Título nivel licenciatura</label>
-                                                    <input type="text" class="form-control" placeholder="Ejemplo: Finanzas, Recursos Humanos, Tecnología...">
+                                                    <input type="text" class="form-control" name="Título Licenciatura" placeholder="Ejemplo: Finanzas, Recursos Humanos, Tecnología...">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label"> Título nivel maestría</label>
-                                                    <input type="text" class="form-control" placeholder="Ejemplo: Finanzas, Recursos Humanos, Tecnología..."></input>
+                                                    <input type="text" class="form-control" name="Título Maestría" placeholder="Ejemplo: Finanzas, Recursos Humanos, Tecnología..."></input>
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">Título nivel doctorado</label>
-                                                    <input type="text" class="form-control" placeholder="Ejemplo: Finanzas, Recursos Humanos, Tecnología...">
+                                                    <input type="text" class="form-control" name="Título Doctorado" placeholder="Ejemplo: Finanzas, Recursos Humanos, Tecnología...">
                                                 </div>
                                                 
                                                 <!-- Experiencia laboral -->
                                                 <h5>Experiencia Laboral</h5>
                                                 <div class="mb-3">
                                                     <label class="form-label">¿En qué sector se ha desempeñado laboralmente?</label>
-                                                    <select class="form-select" id="sectorSelect">
+                                                    <select class="form-select" id="sectorSelect" name="Sector laboral" >
                                                         <option selected disabled>Selecciona una opción</option>
                                                         <option value="agro">Agropecuario</option>
                                                         <option value="indus">Industrial</option>
@@ -270,12 +272,12 @@
                                                     <!-- Campo condicional para "Otras" opciones -->
                                                     <div class="mb-3 d-none" id="otroSectorDiv">
                                                         <label class="form-label">Por favor, especifica:</label>
-                                                        <input type="text" class="form-control" id="otroSectorInput" placeholder="Escribe el sector laboral">
+                                                        <input type="text" class="form-control" id="otroSectorInput" name="Otro sector laboral" placeholder="Escribe el sector laboral">
                                                     </div>
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">¿Con cuántos años de experiencia cuenta en el sector laboral? (No incluya su experiencia docente)</label>
-                                                    <select class="form-select">
+                                                    <select class="form-select" name="Años de experiencia laboral" >
                                                         <option selected disabled>Selecciona una opción</option>
                                                         <option>1 a 3 años</option>
                                                         <option>4 a 6 años</option>
@@ -286,7 +288,7 @@
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">¿Cuál ha sido el mayor nivel jerárquico que ha alcanzado en el ámbito laboral?</label>
-                                                    <select class="form-select" id="nivelSelect">
+                                                    <select class="form-select" id="nivelSelect" name="Nivel jerárquico alcanzado">
                                                         <option selected disabled>Selecciona una opción</option>
                                                         <option value="dire">Dirección</option>
                                                         <option value="subdire">Subdirección</option>
@@ -300,12 +302,12 @@
                                                     <!-- Campo condicional para "Otras" opciones -->
                                                     <div class="mb-3 d-none" id="otroNivelDiv">
                                                         <label class="form-label">Por favor, especifica:</label>
-                                                        <input type="text" class="form-control" id="otroNivelInput" placeholder="Escribe el sector laboral">
+                                                        <input type="text" class="form-control" id="otroNivelInput" name="Otro nivel jerárquico" placeholder="Escribe el sector laboral">
                                                     </div>
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">Agregue los tres últimos puestos que ha ocupado en el ámbito laboral</label>
-                                                    <input type="text" class="form-control" placeholder="Escriba su respuesta">
+                                                    <input type="text" class="form-control" name="Últimos 3 puestos laborales" placeholder="Escriba su respuesta">
                                                 </div>
                                                 
                                                 <!-- Investigación y consultoría -->
@@ -313,22 +315,22 @@
                                                 <div class="mb-3">
                                                     <label class="form-label">¿Realiza o ha realizado investigación científica?</label>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="investigacion" id="investigacionSi" value="si">
+                                                        <input class="form-check-input" type="radio" name="investigacion_cientifica" id="investigacionSi" value="si">
                                                         <label class="form-check-label text-black" for="investigacionSi">Sí</label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="investigacion" id="investigacionNo" value="no">
+                                                        <input class="form-check-input" type="radio" name="investigacion_cientifica" id="investigacionNo" value="no">
                                                         <label class="form-check-label text-black" for="investigacionNo">No</label>
                                                     </div>
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label">¿Cuenta usted con artículos científicos publicados en plataformas arbitradas?</label>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="articulos" id="articulosSi" value="si">
+                                                        <input class="form-check-input" type="radio" name="articulos_científicos" id="articulosSi" value="si">
                                                         <label class="form-check-label text-black" for="articulosSi">Sí</label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="articulos" id="articulosNo" value="no">
+                                                        <input class="form-check-input" type="radio" name="articulos_científicos" id="articulosNo" value="no">
                                                         <label class="form-check-label text-black" for="articulosNo">No</label>
                                                     </div>
                                                 </div>
@@ -350,11 +352,11 @@
                                                 <div class="mb-3">
                                                     <label class="form-label">¿Expide usted facturas o recibos de honorarios?</label>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="factura" id="facturaSi" value="si">
+                                                        <input class="form-check-input" type="radio" name="Expide_factura" id="facturaSi" value="si">
                                                         <label class="form-check-label text-black" for="facturaSi">Sí</label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="factura" id="facturaNo" value="no">
+                                                        <input class="form-check-input" type="radio" name="Expide_factura" id="facturaNo" value="no">
                                                         <label class="form-check-label text-black" for="facturaNo">No</label>
                                                     </div>
                                                 </div>
@@ -365,7 +367,7 @@
                                                 <div class="mb-3">
                                                     <label class="form-label">Curriculum Vitae (CV)</label>
                                                     <p class="text-muted small fst-italic">Carga el archivo de tu CV en formato pdf</p>
-                                                    <input type="file" class="form-control">
+                                                    <input type="file" class="form-control" name="CV (Consultor)">
                                                 </div>
                                             </div>
                                         </div>
@@ -373,11 +375,11 @@
                                     
                                     <!-- Botón de envío (se muestra dinámicamente al seleccionar un rol) -->
                                     <div id="submitBtnContainer" class="text-center mt-4 d-none">
-                                        <button id="sendButton" type="button" class="btn btn-outline-primary btn-lg px-5 py-3 fw-bolder">Enviar</button>
+                                        <button id="sendButton" type="submit" class="btn btn-outline-primary btn-lg px-5 py-3 fw-bolder">Enviar</button>
                                     </div>
                                 </form>
                                 
-                                <!-- Toast de confirmación (oculto inicialmente) -->
+                                <!-- Toast de confirmación (oculto inicialmente) --
                                 <div class="toast-container position-fixed top-50 start-50 translate-middle p-3">
                                     <div id="messageToast" class="toast text-white bg-success2 border-0" role="alert" aria-live="assertive" aria-atomic="true">
                                         <div class="toast-header bg-success2 text-white">
@@ -389,7 +391,7 @@
                                             <p class="mb-0">¡Gracias por tu interés en nuestros servicios! 😊</p>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                             </div> <!-- Fin de card-body -->
                         </div> <!-- Fin de card -->
                     </div>
@@ -410,7 +412,8 @@
                     <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end gap-3">
                         <a class="small text-decoration-underline text-primary fw-semibold" href="#!">Términos y Condiciones</a>
                         <span class="text-muted">&middot;</span>
-                        <a class="small text-decoration-underline text-primary fw-semibold" href="#!">Política de Privacidad</a>
+                        
+                        <a class="small text-decoration-underline text-primary fw-semibold" href="views/AVISODEPRIVACIDADGENERAL.pdf" target="_blank">Política de Privacidad</a>
                     </div>
                 </div>
             </div>
