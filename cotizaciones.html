@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Metadatos y recursos -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>CCAI</title>
+        <title>CCAI - Contacto</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -21,17 +22,17 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body id="page-top">
-        <!-- Navigation-->
+        <!-- ==================== BARRA DE NAVEGACIÓN ==================== -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container-fluid">
-                <!-- Logo -->
+                <!-- Logo que redirige a la página principal -->
                 <a class="navbar-brand" href="index.html"><img src="Views/img/logo.png" alt="Logo" /></a>
-
+                
                 <!-- Botón hamburguesa (móvil) -->
                 <button class=" navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">MENU <i class="fas fa-bars ms-1"></i>
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> MENU <i class="fas fa-bars ms-1"></i>
                 </button>
-
+                
                 <!-- Menú completo -->
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0 d-lg-flex align-items-lg-center flex-column flex-lg-row text-center w-100 justify-content-between">
@@ -62,16 +63,15 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
+        <!-- ==================== CABECERA PRINCIPAL ==================== -->
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Bienvenidos al Centro de Cooperacion Academia-Industria</div>
-                <div class="masthead-heading text-uppercase">Cotizaciones</div>
+                <div class="masthead-heading text-uppercase">Cotizaciones</div> 
             </div>
         </header>
 
         <!-- Cotizaciones -->
-            <!-- Cotizaciones -->
                 <section class="page-section bg-light" id="Cotizaciones">
                     <div class="container">
                         <div class="text-center mb-5">
@@ -104,7 +104,9 @@
                                                 <p class="text-muted text-center mb-4">
                                                     Por favor completa el siguiente formulario para enviarte una propuesta personalizada.
                                                 </p>
-                                                <form id="cotizacionForm" action="#" method="post" class="needs-validation" novalidate>
+                                                    <form id="mainForm" action="https://formsubmit.co/direccionccai@teschi.edu.mx" method="POST">
+                                                    <input type="hidden" name="_subject" value="Nueva solicitud para integrarse al CCAI">
+                                                    <input type="hidden" name="_next" value="https://148.230.236.165/CCAI/gracias.html">
                                                     <div class="row g-3 mb-3">
                                                         <div class="col-md-6">
                                                             <div class="d-flex align-items-center bg-light rounded-4 p-2">
@@ -170,35 +172,35 @@
                             </div>
                         </section>
                 </section>
-
-            <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto table-group-divider">
+        <!-- Footer -->
+        <footer class="bg-white py-4 mt-auto table-group-divider ">
             <div class="container-fluid px-0">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto">
-                        <div class="small m-0"> 
-                            <a>&copy; Centro de Cooperación Academia Industria (CCAI) Teschi </a>
-                            <span class="mx-1">&middot;</span>
-                            <a>Todos los derechos reservados 2025</a>
-                        </div>
+                <div class="row text-center text-sm-start align-items-center">
+                    <!-- Información de derechos -->
+                    <div class="col-12 col-sm-6 mb-2 mb-sm-0">
+                        <div class="small text-muted">© Centro de Cooperación Academia Industria (CCAI) Teschi Todos los derechos reservados 2025</div>
                     </div>
-                    <div class="col-auto">
-                        <a class="small text-primario-600" href="#!">Términos y Condiciones</a>
-                        <span class="mx-1">&middot;</span>
-                        
+                    <!-- Enlaces -->
+                    <!-- Enlaces -->
+                    <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end gap-3">
+                        <a class="small text-decoration-underline text-primary fw-semibold" href="terminos.html" target="_blank">Términos y Condiciones</a>
+                        <span class="text-muted">&middot;</span>
                         <a class="small text-decoration-underline text-primary fw-semibold" href="views/AVISODEPRIVACIDADGENERAL.pdf" target="_blank">Política de Privacidad</a>
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="Views/js/scripts.js"></script>
+        <script src="views/js/scripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        
+        
     </body>
-</html>
+    <!-- Modal de Política de Privacidad -->
+    
+
+</html> 
