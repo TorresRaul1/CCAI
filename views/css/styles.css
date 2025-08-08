@@ -11416,3 +11416,20 @@ section#contact form#contactForm :-ms-input-placeholder {
   --bs-text-opacity: 1;
   color: #000 !important;
 }
+/*PARA EFECTO DE FLOTACIÓN SUEVA EN IMG */
+/* Agrega esto en tu archivo CSS */
+@keyframes float {
+  0% { transform: translatey(0px); }
+  50% { transform: translatey(-10px); }
+  100% { transform: translatey(0px); }
+}
+.img-fluid.float {
+  animation: float 3s ease-in-out infinite;
+}
+/*ANIMACIÓN PARA BOTONES*/
+.nav-link, .card {
+  transition: transform 0.3s ease-in-out;
+}
+.nav-link:hover, .card:hover {
+  transform: scale(1.05);
+}

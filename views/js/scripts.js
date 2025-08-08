@@ -96,4 +96,22 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     }
 
+    const reveals = document.querySelectorAll(".reveal");
+
+    function animateOnScroll() {
+    reveals.forEach((el) => {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+        const elementVisible = 100;
+
+        if (elementTop < windowHeight - elementVisible) {
+            el.classList.add("animate__animated", "animate__fadeInUp");
+        }
+        });
+    }
+
+    window.addEventListener("scroll", animateOnScroll);
+    animateOnScroll(); // para cargar los que ya estén visibles
 });
+
+
