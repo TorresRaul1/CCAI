@@ -72,106 +72,121 @@
         </header>
 
         <!-- Cotizaciones -->
-                <section class="page-section bg-light" id="Cotizaciones">
-                    <div class="container">
-                        <div class="text-center mb-5">
-                            <h2 class="section-heading text-uppercase">Solicita una Cotización</h2>
-                            <h3 class="section-subheading text-muted">Transforma tu idea en una solución concreta con el apoyo del CCAI.</h3>
-                        </div>
+                <section class="py-5" id="Cotizaciones">
+                    <div class="container px-5 mb-5">
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-11 col-xl-9 col-xxl-8">
+                                <!-- Tarjeta contenedora -->
+                                <div class="card shadow border-0 rounded-4 mb-5">
+                                    <div class="card-body p-5">
+                                        
+                                        <!-- Encabezado -->
+                                        <div class="text-center mb-4">
+                                            <h2 class="section-heading text-uppercase">Solicita una Cotización</h2>
+                                            <h3 class="section-subheading text-muted">
+                                                Transforma tu idea en una solución concreta con el apoyo del CCAI.
+                                            </h3>
+                                        </div>
 
-                        <!-- Descripción -->
-                        <div class="row justify-content-center mb-4">
-                            <div class="col-lg-10 text-center">
-                                <p class="lead text-muted">
-                                    En el <strong>Centro de Cooperación Academia-Industria</strong> trabajamos de la mano contigo para ofrecer soluciones personalizadas en diseño, automatización, simulación y desarrollo tecnológico. Completa el siguiente formulario y uno de nuestros consultores especializados te contactará con una propuesta adaptada a tus necesidades.
-                                </p>
-                                <p class="text-muted">Nos comprometemos a responder en un plazo no mayor a 72 horas hábiles.</p>
-                            </div>
-                        </div>
+                                        <!-- Descripción -->
+                                        <div class="text-center mb-4">
+                                            <p class="lead text-muted">
+                                                En el <strong>Centro de Cooperación Academia-Industria</strong> trabajamos de la mano contigo para ofrecer soluciones personalizadas en diseño, automatización, simulación y desarrollo tecnológico.
+                                                Completa el siguiente formulario y uno de nuestros consultores especializados te contactará con una propuesta adaptada a tus necesidades.
+                                            </p>
+                                            <p class="text-muted">Nos comprometemos a responder en un plazo no mayor a 72 horas hábiles.</p>
+                                        </div>
 
-                        <!-- Formulario -->
-                        <section class="py-5">
-                            <div class="container px-5 mb-5">
-                                <div class="row gx-5 justify-content-center">
-                                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                                        <div class="card shadow border-0 rounded-4 mb-5">
-                                            <div class="card-body p-5">
-                                                <div class="text-center mb-4">
-                                                    <h1 class="fw-bolder mb-0">
-                                                        <span class="text-gradient d-inline">Cotiza tu proyecto</span>
-                                                    </h1>
-                                                </div>
-                                                <p class="text-muted text-center mb-4">
-                                                    Por favor completa el siguiente formulario para enviarte una propuesta personalizada.
-                                                </p>
-                                                    <form id="mainForm" action="https://formsubmit.co/direccionccai@teschi.edu.mx" method="POST">
-                                                    <input type="hidden" name="_subject" value="Nueva solicitud para integrarse al CCAI">
-                                                    <input type="hidden" name="_next" value="https://148.230.236.165/CCAI/gracias.html">
-                                                    <div class="row g-3 mb-3">
-                                                        <div class="col-md-6">
-                                                            <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                                                                <i class="bi bi-person-circle me-2"></i>
-                                                                <input type="text" class="form-control bg-light border-0" id="nombre" name="nombre" placeholder="Nombre completo" required>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                                                                <i class="bi bi-envelope-fill me-2"></i>
-                                                                <input type="email" class="form-control bg-light border-0" id="correo" name="correo" placeholder="Correo electrónico" required>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                                                                <i class="bi bi-building me-2"></i>
-                                                                <input type="text" class="form-control bg-light border-0" id="empresa" name="empresa" placeholder="Empresa / Institución">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="d-flex align-items-center bg-light rounded-4 p-2">
-                                                                <i class="bi bi-kanban-fill me-2"></i>
-                                                                <select class="form-select bg-light border-0" id="servicio" name="servicio" required>
-                                                                    <option value="" selected disabled>Tipo de área requerida</option>
-                                                                    <option value="diseno">Claude Shannon (Centro de Desarrollo)</option>
-                                                                    <option value="automatizacion">Aldea Da Vinci</option>
-                                                                    <option value="simulacion">Casa de los Pochtecas</option>
-                                                                    <option value="asesoria">Cocina Mexa</option>
-                                                                    <option value="otro">Laboratorio Kyoto</option>
-                                                                    <option value="otro">Otro</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="d-flex align-items-start bg-light rounded-4 p-2">
-                                                                <i class="bi bi-chat-text me-2 mt-2"></i>
-                                                                <textarea class="form-control bg-light border-0" id="descripcion" name="descripcion" rows="4" placeholder="Descripción del proyecto o requerimiento" required></textarea>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="text-center mt-4">
-                                                        <button type="submit" class="btn btn-outline-primary btn-lg px-5 py-3 fw-bolder">Enviar solicitud</button>
-                                                    </div>
-                                                </form>
+                                        <!-- Formulario -->
+                                        <form id="mainForm" action="https://formsubmit.co/direccionccai@teschi.edu.mx" method="POST">
+                                            <input type="hidden" name="_subject" value="Nueva solicitud para integrarse al CCAI">
+                                            <input type="hidden" name="_next" value="https://148.230.236.165/CCAI/gracias.html">
 
-                                                <!-- Toast -->
-                                                <div class="toast-container position-fixed top-50 start-50 translate-middle p-3">
-                                                    <div id="messageToast" class="toast text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
-                                                        <div class="toast-header bg-success text-white">
-                                                            <strong class="me-auto">Mensaje</strong>
-                                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="toast-body text-center">
-                                                            <p class="mb-1">Hemos recibido tu solicitud, pronto nos pondremos en contacto contigo.</p>
-                                                            <p class="mb-0">¡Gracias por tu interés en nuestros servicios!</p>
-                                                        </div>
+                                            <div class="row g-3 mb-3">
+                                                <!-- Nombre -->
+                                                <div class="col-md-6">
+                                                    <label for="nombre" class="form-label">Nombre completo</label>
+                                                    <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                                                        <i class="bi bi-person-circle me-2"></i>
+                                                        <input type="text" class="form-control bg-light border-0" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
                                                     </div>
                                                 </div>
-                                            </div> <!-- card-body -->
-                                        </div> <!-- card -->
-                                    </div>
-                                </div>
+
+                                                <!-- Correo -->
+                                                <div class="col-md-6">
+                                                    <label for="correo" class="form-label">Correo electrónico</label>
+                                                    <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                                                        <i class="bi bi-envelope-fill me-2"></i>
+                                                        <input type="email" class="form-control bg-light border-0" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Empresa -->
+                                                <div class="col-12">
+                                                    <label for="empresa" class="form-label">Empresa / Institución</label>
+                                                    <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                                                        <i class="bi bi-building me-2"></i>
+                                                        <input type="text" class="form-control bg-light border-0" id="empresa" name="empresa" placeholder="Nombre de la empresa o institución">
+                                                    </div>
+                                                </div>
+
+                                                <!-- Servicio -->
+                                                <div class="col-12">
+                                                    <label for="servicio" class="form-label">Tipo de área requerida</label>
+                                                    <div class="d-flex align-items-center bg-light rounded-4 p-2">
+                                                        <i class="bi bi-kanban-fill me-2"></i>
+                                                        <select class="form-select bg-light border-0" id="servicio" name="servicio" required>
+                                                            <option value="" selected disabled>Selecciona una opción</option>
+                                                            <option value="diseno">Claude Shannon (Centro de Desarrollo)</option>
+                                                            <option value="automatizacion">Aldea Da Vinci</option>
+                                                            <option value="simulacion">Casa de los Pochtecas</option>
+                                                            <option value="asesoria">Cocina Mexa</option>
+                                                            <option value="otro">Laboratorio Kyoto</option>
+                                                            <option value="otro">Otro</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Descripción -->
+                                                <div class="col-12">
+                                                    <label for="descripcion" class="form-label">Descripción del proyecto o requerimiento</label>
+                                                    <div class="d-flex align-items-start bg-light rounded-4 p-2">
+                                                        <i class="bi bi-chat-text me-2 mt-2"></i>
+                                                        <textarea class="form-control bg-light border-0" id="descripcion" name="descripcion" rows="4" placeholder="Describe tu proyecto" required></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Botón -->
+                                                <div class="mt-4 d-grid d-md-flex justify-content-md-center">
+                                                    <button type="submit" 
+                                                            class="btn btn-outline-primary btn-lg fw-bolder w-100 w-md-auto px-4 py-3">
+                                                        Enviar solicitud
+                                                    </button>
+                                                </div>
+                                        </form>
+
+                                        <!-- Toast -->
+                                        <div class="toast-container position-fixed top-50 start-50 translate-middle p-3">
+                                            <div id="messageToast" class="toast text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                                                <div class="toast-header bg-success text-white">
+                                                    <strong class="me-auto">Mensaje</strong>
+                                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+                                                </div>
+                                                <div class="toast-body text-center">
+                                                    <p class="mb-1">Hemos recibido tu solicitud, pronto nos pondremos en contacto contigo.</p>
+                                                    <p class="mb-0">¡Gracias por tu interés en nuestros servicios!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div> <!-- card-body -->
+                                </div> <!-- card -->
                             </div>
-                        </section>
+                        </div>
+                    </div>
                 </section>
+
         <!-- Footer -->
         <footer class="bg-white py-4 mt-auto table-group-divider ">
             <div class="container-fluid px-0">
