@@ -114,4 +114,7 @@ window.addEventListener('DOMContentLoaded', event => {
     animateOnScroll(); // para cargar los que ya estén visibles
 });
 
-
+// Inicializar AOS (Animate On Scroll)
+document.addEventListener("DOMContentLoaded", function () {
+    AOS.init();
+});

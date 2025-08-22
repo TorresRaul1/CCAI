@@ -11433,3 +11433,22 @@ section#contact form#contactForm :-ms-input-placeholder {
 .nav-link:hover, .card:hover {
   transform: scale(1.05);
 }
+
+.animated-message {
+  animation: fadeInUp 0.8s ease-out;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.animated-message:hover {
+  transform: scale(1.1); /* Aumenta el tamaño */
+  animation: fadeInOut 0.6s ease-in-out;
+}
+.animated-message2 {
+  animation: fadeInUp 0.8s ease-out;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.animated-message3:hover {
+  transform: scale(1.1); /* Aumenta el tamaño */
+  animation: fadeInOut 0.6s ease-in-out;
+}
